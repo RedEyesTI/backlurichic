@@ -1,0 +1,20 @@
+{
+  "name": "lurichichouse",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
