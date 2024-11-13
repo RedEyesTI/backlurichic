@@ -3,10 +3,10 @@ const express = require('express');
 const router = express.Router();
 // Crear el pool de conexiones
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'hunter',
-  database: 'lurichichouse',
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DB,
   waitForConnections: true,  // Esperar conexiones si todas están ocupadas
   connectionLimit: 10,       // Límite máximo de conexiones en el pool
   queueLimit: 0              // Límite de conexiones en cola (0 = ilimitado)
