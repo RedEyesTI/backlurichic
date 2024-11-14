@@ -32,7 +32,62 @@ router.post('/postpago', (req, res) => {
             });
         }
       });
+ }) ;
+
+  router.get('/getresumenpagos', (req, res) => {
+   
+    obtenerresumen().then(resultados => {
+        if (resultados) {
+          console.log('invoca servicio obtener resumen');
+          res.status(200).json({
+            ...resultados[0], // Si es un array, devuelve el primer objeto
+            status: 200,
+            message: "Resumen ok"
+          });
+
+        } else {
+            res.status(404).json({            
+                status: 404,
+                message: "Error en Consulta."
+            });
+        }
+      });
   });
+
+  async function obtenerresumen() {
+    let connection;
+    try {
+      // Obtener una conexión del pool
+      connection = await pool.getConnection();
+      // colocamos los valores del body en los campos
+      //const { idservicio, descservotro,mes, anio,monto, comentarios} = req.body;
+      // Realizar la consulta en la BD
+      const resultado = await connection.execute('SELECT SUM(monto) as totalmonto, COUNT(monto) as cantidadpagos FROM pagos' );
+  
+      const [rows] = resultado;
+
+    // Verificar si hay resultados
+    if (rows.length === 0) {
+      console.log('No hay pagos!!.');
+      return null;
+    }
+
+    // Almacena resultado
+    const resultados = rows;
+    // Retorna los resultados para usarlos fuera de la función
+    return resultados; 
+
+    } catch (error) {
+        console.error('Error en la consulta:', error);
+        return null; // En caso de error, retornamos null
+  
+      } finally {
+        // Asegurarse de liberar la conexión de vuelta al pool
+        if (connection) {
+          connection.release();
+        }
+    }
+  }
 
   async function ejecutarpago(req) {
     let connection;
