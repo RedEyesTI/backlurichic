@@ -95,11 +95,11 @@ router.post('/postpago', (req, res) => {
           // Obtener una conexión del pool
           connection = await pool.getConnection();
           // colocamos los valores del body en los campos
-          const { idservicio, descservotro,mes, anio,monto, comentarios} = req.body;
+          const { categoria, servicio, monto, comentarios, fechapagoreal, usu_registro} = req.body;
           // Realizar la consulta en la BD
           const resultado = await connection.execute(
-            'INSERT INTO pagos (idservicio, descservotro,mes, anio,monto, comentarios)' + 
-            'VALUES (?,?,?,?,?,?)',[ idservicio, descservotro,mes, anio,monto, comentarios]);
+            'INSERT INTO pagos (categoria, servicio, monto, comentarios, fechapagoreal, usu_registro)' + 
+            'VALUES (?,?,?,?,?,?)',[ categoria, servicio, monto, comentarios, fechapagoreal, usu_registro]);
       
             const [rows] = resultado;
   
