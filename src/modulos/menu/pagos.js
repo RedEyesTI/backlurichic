@@ -68,7 +68,7 @@ router.post('/postpago', (req, res) => {
         } else {
             res.status(404).json({            
                 status: 404,
-                message: "Error en Consulta."
+                message: "No se encontraton resultados"
             });
         }
       });
