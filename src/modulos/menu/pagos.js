@@ -54,13 +54,13 @@ router.post('/postpago', (req, res) => {
       });
   });
 
-  router.get('/getdetallepagos', (req, res) => {
+  router.post('/getdetallepagos', (req, res) => {
    
     obtenerdetallepago(req).then(resultados => {
         if (resultados) {
           console.log('invoca servicio obtener resumen');
           res.status(200).json({
-            ...resultados[0], // Si es un array, devuelve el primer objeto
+            ...resultados, // Si es un array, devuelve el primer objeto
             status: 200,
             message: "Resumen ok"
           });
