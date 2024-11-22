@@ -20,13 +20,12 @@ CREATE TABLE `lurichichouse`.`usuarios` (
   
   CREATE TABLE `lurichichouse`.`pagos` (
   `idoperacion` INT AUTO_INCREMENT NOT NULL,
-  `idservicio` VARCHAR(45) NULL,
-  `descservotro` VARCHAR(45) NULL,
-  `mes` VARCHAR(10) NULL, 
-  `anio` VARCHAR(4) NULL,
+  `categoria` VARCHAR(45) NULL,
+  `servicio` VARCHAR(45) NULL,
   `monto` decimal(5,2) NULL,
   `comentarios` VARCHAR(50) NULL,
   `dia_registro` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `fechapagoreal` VARCHAR(10),
   `usu_registro` VARCHAR(10) NULL,
   PRIMARY KEY (`idoperacion`));
   
