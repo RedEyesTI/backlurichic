@@ -58,9 +58,9 @@ router.post('/postpago', (req, res) => {
    
     obtenerdetallepago(req).then(resultados => {
         if (resultados) {
-          console.log('invoca servicio obtener resumen');
+          console.log('invoca servicio obtener detalle pago');
           res.status(200).json({
-            ...resultados, // Si es un array, devuelve el primer objeto
+            pagos: resultados,  // Enviar 'resultados' como un array bajo la clave 'result'
             status: 200,
             message: "Resumen ok"
           });
