@@ -118,7 +118,7 @@ router.post('/postpago', (req, res) => {
       const { anio,mes} = req.body;
       // Realizar la consulta en la BD
       const resultado = await connection.execute(
-        "SELECT * FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes
+        "SELECT * FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " ORDER BY fechapagoreal DESC"
       );
       const [rows] = resultado;
 
@@ -152,6 +152,10 @@ router.post('/postpago', (req, res) => {
           connection = await pool.getConnection();
           // colocamos los valores del body en los campos
           const { categoria, servicio, monto, comentarios, fechapagoreal, usu_registro} = req.body;
+          console.log('Datos recibidos:', req.body);
+
+
+          
           // Realizar la consulta en la BD
           const resultado = await connection.execute(
             'INSERT INTO pagos (categoria, servicio, monto, comentarios, fechapagoreal, usu_registro)' + 
