@@ -214,7 +214,7 @@ async function retirarpago(req) {
         const { idoperacion } = req.body;
         console.log('Datos recibidos:', req.body); //Parametros de entrada del body
 
-        const resultado = await connection.execute('DELETE FROM PAGOS WHERE IDOPERACION = ' + idoperacion);
+        const resultado = await connection.execute('DELETE FROM pagos WHERE idoperacion = ' + idoperacion);
         const [rows] = resultado;
 
         const query = 'DELETE FROM tu_tabla WHERE id = ?';
