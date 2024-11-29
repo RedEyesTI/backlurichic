@@ -16,8 +16,8 @@ app.use(express.json()); // Middleware para procesar JSON
 
 
 app.post('/login', usuarios);
-app.post('/postpago', pagos);
 app.use('/api/pagos', pagos);
+//app.post('/postquitarpago', pagos);
 
 /*
 app.post('/login', (req, res) => {

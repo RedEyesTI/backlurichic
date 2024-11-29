@@ -12,7 +12,7 @@ const pool = mysql.createPool({
   queueLimit: 0              // Límite de conexiones en cola (0 = ilimitado)
 });
 
-router.post('/postpago', (req, res) => {
+router.post('/grabarpago', (req, res) => {
    
     ejecutarpago(req).then(resultados => {
         if (resultados) {
@@ -33,6 +33,28 @@ router.post('/postpago', (req, res) => {
         }
       });
  }) ;
+
+ router.post('/quitarpago', (req, res) => {
+  console.log('Inicio Servicio Quitar Pago');
+  retirarpago(req).then(resultados => {
+      if (resultados) {
+        console.log('entro');
+        console.log(resultados);
+        res.status(200).json({
+          ...resultados[0], // Si es un array, devuelve el primer objeto
+          status: 200,
+          message: "Pago retirado."
+        });
+
+      } else {
+          res.status(404).json({
+             
+              status: 404,
+              message: "Error en retirar pago."
+          });
+      }
+    });
+}) ;
 
   router.get('/getresumenpagos', (req, res) => {
    
@@ -154,8 +176,6 @@ router.post('/postpago', (req, res) => {
           const { tipopago, pagopersonal, categoria, servicio, monto, comentarios, fechapagoreal, usu_registro} = req.body;
           console.log('Datos recibidos:', req.body);
 
-
-          
           // Realizar la consulta en la BD
           const resultado = await connection.execute(
             'INSERT INTO pagos (tipopago, pagopersonal, categoria, servicio, monto, comentarios, fechapagoreal, usu_registro)' + 
@@ -185,13 +205,37 @@ router.post('/postpago', (req, res) => {
             }
         }
 }
+
+async function retirarpago(req) {
+  let connection;
+  try {
+        
+        connection = await pool.getConnection(); // Obtener una conexión del pool
+        const { idoperacion } = req.body;
+        console.log('Datos recibidos:', req.body); //Parametros de entrada del body
+
+        const resultado = await connection.execute('DELETE FROM PAGOS WHERE IDOPERACION = ' + idoperacion);
+        const [rows] = resultado;
+
+        const query = 'DELETE FROM tu_tabla WHERE id = ?';
+
+        if (rows.length === 0) {
+          console.log('Credencial incorreta!!.');
+          return null;
+        }
+
+        const resultados = rows;
+        return resultados; 
+
+        } catch (error) {
+          console.error('Error en la consulta:', error);
+          return null; // En caso de error, retornamos null
+    
+        } finally {
+          // Asegurarse de liberar la conexión de vuelta al pool
+          if (connection) {
+            connection.release();
+          }
+      }
+}
 module.exports = router;
-/*
-`idoperacion` INT AUTO_INCREMENT NOT NULL,
-`idservicio` VARCHAR(45) NULL,
-`descservotro` VARCHAR(45) NULL,
-`mes` VARCHAR(10) NULL, 
-`anio` VARCHAR(4) NULL,
-`monto` decimal(5,2) NULL,
-`comentarios` VARCHAR(50) NULL,
-*/
