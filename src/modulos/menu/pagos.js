@@ -159,7 +159,7 @@ router.post('/postpago', (req, res) => {
           // Realizar la consulta en la BD
           const resultado = await connection.execute(
             'INSERT INTO pagos (tipopago, pagopersonal, categoria, servicio, monto, comentarios, fechapagoreal, usu_registro)' + 
-            'VALUES (?,?,?,?,?,?)',[ tipopago, pagopersonal, categoria, servicio, monto, comentarios, fechapagoreal, usu_registro]);
+            'VALUES (?,?,?,?,?,?,?,?)',[ tipopago, pagopersonal, categoria, servicio, monto, comentarios, fechapagoreal, usu_registro]);
       
             const [rows] = resultado;
   
