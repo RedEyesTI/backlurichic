@@ -5,18 +5,21 @@ const config  = require('./config');
 const usuarios = require('./modulos/usuarios/usuarios');
 const cliente = require('./database/connectionconfig');
 const pagos = require('./modulos/menu/pagos');
+const mercado = require('./modulos/mercado/mercado');
 const app = express();
 
 //agregando a un puerto a mi apliacion app
 app.set('port', config.app.port);
 
 //rutas api
+
 app.use('/api/usuarios',usuarios);
 app.use(express.json()); // Middleware para procesar JSON
 
 
 app.post('/login', usuarios);
 app.use('/api/pagos', pagos);
+app.use('/api/mercados', mercado);
 //app.post('/postquitarpago', pagos);
 
 /*
