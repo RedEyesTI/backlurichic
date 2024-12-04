@@ -60,7 +60,7 @@ router.post('/grabaritemmercado', (req, res) => {
     let connection;
     try {
           connection = await pool.getConnection(); // Obtener una conexión del pool
-          const { iditem } = req.body;
+          const { categoryitem, nameitem,  statusitem, useritem } = req.body;
           console.log('body_grabaritem_mercado:', req.body); //Parametros de entrada del body
   
           const resultado = await connection.execute(
