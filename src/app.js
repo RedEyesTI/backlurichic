@@ -5,7 +5,8 @@ const config  = require('./config');
 const usuarios = require('./modulos/usuarios/usuarios');
 const cliente = require('./database/connectionconfig');
 const pagos = require('./modulos/menu/pagos');
-const mercado = require('./modulos/mercado/mercado');
+const mercado = require('./modulos/menu/mercado');
+const agenda = require('./modulos/menu/agenda');
 const app = express();
 
 //agregando a un puerto a mi apliacion app
@@ -20,6 +21,7 @@ app.use(express.json()); // Middleware para procesar JSON
 app.post('/login', usuarios);
 app.use('/api/pagos', pagos);
 app.use('/api/mercados', mercado);
+app.use('/api/agenda', agenda);
 //app.post('/postquitarpago', pagos);
 
 /*
