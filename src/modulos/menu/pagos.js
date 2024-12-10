@@ -140,7 +140,9 @@ router.post('/grabarpago', (req, res) => {
       const { anio,mes} = req.body;
       // Realizar la consulta en la BD
       const resultado = await connection.execute(
-        "SELECT * FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " ORDER BY fechapagoreal DESC"
+        "SELECT p.*,"+
+        "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + ") AS suma_monto" +
+        " FROM pagos p WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " ORDER BY fechapagoreal DESC"
       );
       const [rows] = resultado;
 
