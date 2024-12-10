@@ -1,6 +1,7 @@
-const mysql = require('mysql2/promise');
+const mysql   = require('mysql2/promise');
 const express = require('express');
-const router = express.Router();
+const router  = express.Router();
+
 // Crear el pool de conexiones
 const pool = mysql.createPool({
   host: process.env.MYSQL_HOST,
@@ -11,6 +12,9 @@ const pool = mysql.createPool({
   connectionLimit: 10,       // Límite máximo de conexiones en el pool
   queueLimit: 0              // Límite de conexiones en cola (0 = ilimitado)
 });
+
+
+
 
 router.post('/grabaragenda', (req, res) => {
    
@@ -25,7 +29,6 @@ router.post('/grabaragenda', (req, res) => {
 
         } else {
             res.status(404).json({
-               
                 status: 404,
                 message: "Error en agregar evento."
             });
@@ -46,7 +49,6 @@ router.post('/grabaragenda', (req, res) => {
 
         } else {
             res.status(404).json({
-               
                 status: 404,
                 message: "Error en actualizar evento."
             });
@@ -54,6 +56,49 @@ router.post('/grabaragenda', (req, res) => {
       });
  });
 
+ router.get('/getobteneragenda', (req, res) => {
+   
+    obtener_agenda(req).then(resultados => {
+        if (resultados) {
+          console.log(resultados);
+          res.status(200).json({
+            eventos: resultados, // Si es un array, devuelve el primer objeto
+            status: 200,
+            message: "Consulta realizada."
+          });
+
+        } else {
+            res.status(404).json({
+                status: 404,
+                message: "Error en consultar eventos."
+            });
+        }
+      });
+ });
+
+ async function obtener_agenda(req) {
+    let connection;
+    try {
+      // Obtener una conexión del pool
+      connection = await pool.getConnection();
+      const {anio,mes} = req.body;
+      const resultado = await connection.execute("SELECT * FROM EVENTOS");
+      const [rows] = resultado;
+      if (rows.length === 0) {
+      console.log('No hay EVENTOS!!.');
+      return null;
+      }
+      const resultados = rows;
+        return resultados; 
+        } catch (error) {
+            console.error('Error en la consulta:', error);
+            return null; 
+        } finally {
+            if (connection) {
+            connection.release();
+            }
+        }
+  }
 
 
  async function grabar_evento_agenda(req) {
@@ -87,6 +132,9 @@ router.post('/grabaragenda', (req, res) => {
             }
         }
   }
+
+
+
 
   async function actualizar_evento_agenda(req) {
     let connection;
