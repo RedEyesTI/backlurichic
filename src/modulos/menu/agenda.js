@@ -82,7 +82,7 @@ router.post('/grabaragenda', (req, res) => {
       // Obtener una conexión del pool
       connection = await pool.getConnection();
       const {anio,mes} = req.body;
-      const resultado = await connection.execute("SELECT * FROM EVENTOS");
+      const resultado = await connection.execute("SELECT * FROM eventos");
       const [rows] = resultado;
       if (rows.length === 0) {
       console.log('No hay EVENTOS!!.');
