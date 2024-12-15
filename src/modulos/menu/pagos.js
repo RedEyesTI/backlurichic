@@ -150,9 +150,9 @@ router.post('/grabarpago', (req, res) => {
         "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " AND tipopago = 'FAMILIAR' AND servicio <> 'AHORROS' AND usu_registro = 'Beatriz') AS gastoFamiliarBea, " +
         "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " AND tipopago = 'FAMILIAR' AND servicio <> 'AHORROS' AND usu_registro = 'Jair') AS gastoFamiliarJair, " +
 
-        "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " AND tipopago = 'PERSONAL') AS gastoFamiliarTotal, " +
-        "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " AND tipopago = 'PERSONAL' AND pagopersonal = 'Beatriz') AS gastoFamiliarBea, " +
-        "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " AND tipopago = 'PERSONAL' AND pagopersonal = 'Jair') AS gastoFamiliarJair " +
+        "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " AND tipopago = 'PERSONAL') AS gastoPersoTotal, " +
+        "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " AND tipopago = 'PERSONAL' AND pagopersonal = 'Beatriz') AS gastoPersonalBea, " +
+        "(SELECT SUM(monto) FROM pagos WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " AND tipopago = 'PERSONAL' AND pagopersonal = 'Jair') AS gastoPersonalJair " +
 
 
 
