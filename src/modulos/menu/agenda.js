@@ -81,7 +81,6 @@ router.post('/grabaragenda', (req, res) => {
     try {
       // Obtener una conexión del pool
       connection = await pool.getConnection();
-      const {anio,mes} = req.body;
       const resultado = await connection.execute("SELECT * FROM eventos");
       const [rows] = resultado;
       if (rows.length === 0) {
@@ -132,9 +131,6 @@ router.post('/grabaragenda', (req, res) => {
             }
         }
   }
-
-
-
 
   async function actualizar_evento_agenda(req) {
     let connection;
