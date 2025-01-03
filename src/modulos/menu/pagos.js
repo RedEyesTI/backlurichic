@@ -104,7 +104,11 @@ router.post('/grabarpago', (req, res) => {
       // colocamos los valores del body en los campos
       //const { idservicio, descservotro,mes, anio,monto, comentarios} = req.body;
       // Realizar la consulta en la BD
-      const resultado = await connection.execute('SELECT SUM(monto) as totalmonto, COUNT(monto) as cantidadpagos FROM pagos' );
+      const resultado = await connection.execute('SELECT '+
+                                                     'SUM(monto) as totalmonto, ' +
+                                                     'COUNT(monto) as cantidadpagos,'+ 
+                                                     "(SELECT SUM(monto) FROM pagos WHERE servicio = 'AHORROS' AND tipopago = 'FAMILIAR') AS ahorros " +
+                                                     ' FROM pagos' );
   
       const [rows] = resultado;
 

@@ -55,6 +55,58 @@ router.post('/grabaritemmercado', (req, res) => {
       });
  }) ;
 
+ router.get('/obteneritemsmercado', (req, res) => {
+   
+  obteneritemsmercado().then(resultados => {
+      if (resultados) {
+        console.log('invoca servicio obtener items de mercado');
+        res.status(200).json({
+          ...resultados[0], // Si es un array, devuelve el primer objeto
+          status: 200,
+          message: "Items ok"
+        });
+
+      } else {
+          res.status(404).json({            
+              status: 404,
+              message: "Error en Consulta."
+          });
+      }
+    });
+});
+
+async function obteneritemsmercado() {
+  let connection;
+  try {
+    // Obtener una conexión del pool
+    connection = await pool.getConnection();
+    const resultado = await connection.execute('SELECT * FROM mercado' );
+
+    const [rows] = resultado;
+
+  // Verificar si hay resultados
+  if (rows.length === 0) {
+    console.log('No hay mercado!!.');
+    return null;
+  }
+
+  // Almacena resultado
+  const resultados = rows;
+  // Retorna los resultados para usarlos fuera de la función
+  return resultados; 
+
+  } catch (error) {
+      console.error('Error en la consulta:', error);
+      return null; // En caso de error, retornamos null
+
+    } finally {
+      // Asegurarse de liberar la conexión de vuelta al pool
+      if (connection) {
+        connection.release();
+      }
+  }
+}
+
 
  async function grabar_item_mercado(req) {
     let connection;
