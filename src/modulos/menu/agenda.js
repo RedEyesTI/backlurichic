@@ -76,7 +76,7 @@ router.post('/grabaragenda', (req, res) => {
       });
  });
 
- async function obtener_agenda(req) {
+ async function obtener_agenda(req,res) {
     let connection;
     try {
       // Obtener una conexión del pool
@@ -89,6 +89,10 @@ router.post('/grabaragenda', (req, res) => {
       }
       const resultados = rows;
         return resultados; 
+
+
+
+
         } catch (error) {
             console.error('Error en la consulta:', error);
             return null; 
