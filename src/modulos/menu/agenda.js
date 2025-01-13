@@ -56,7 +56,7 @@ router.post('/grabaragenda', (req, res) => {
       });
  });
 
- router.get('/getobteneragenda', (req, res) => {
+ router.post('/obteneragenda', (req, res) => {
    
     obtener_agenda(req,res).then(resultados => {
         if (resultados) {
