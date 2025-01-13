@@ -160,7 +160,7 @@ router.post('/grabarpago', (req, res) => {
 
 
 
-        " FROM pagos p WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " ORDER BY fechapagoreal DESC"
+        " FROM pagos p WHERE YEAR(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(fechapagoreal, '%d/%m/%Y')) = " + mes + " ORDER BY STR_TO_DATE(fechapagoreal, '%d/%m/%Y') DESC;"
       );
       const [rows] = resultado;
 
