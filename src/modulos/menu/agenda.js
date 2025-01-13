@@ -58,7 +58,7 @@ router.post('/grabaragenda', (req, res) => {
 
  router.get('/getobteneragenda', (req, res) => {
    
-    obtener_agenda(req).then(resultados => {
+    obtener_agenda(req,res).then(resultados => {
         if (resultados) {
           console.log(resultados);
           res.status(200).json({
