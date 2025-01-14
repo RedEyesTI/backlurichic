@@ -81,7 +81,9 @@ router.post('/grabaragenda', (req, res) => {
     try {
       // Obtener una conexión del pool
       connection = await pool.getConnection();
-      const resultado = await connection.execute("SELECT nameevent as title, hourevent as hour, statusevent as state, DAY(STR_TO_DATE(dayevent, '%d/%m/%Y')) as day FROM eventos");
+      const { mes, anio } = req.body;
+      const resultado = await connection.execute("SELECT nameevent as title, hourevent as hour, statusevent as state, DAY(STR_TO_DATE(dayevent, '%d/%m/%Y')) as day FROM eventos " +
+      "WHERE YEAR(STR_TO_DATE(dayevent, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(dayevent, '%d/%m/%Y')) = " + mes + ") ");
       const [rows] = resultado;
       if (rows.length === 0) {
       console.log('No hay EVENTOS!!.');
