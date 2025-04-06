@@ -70,7 +70,7 @@ router.post('/grabaragenda', (req, res) => {
         } else {
             res.status(404).json({
                 status: 404,
-                message: "Error en consultar eventos."
+                message: "No se encontraron resultados de agenda"
             });
         }
       });
@@ -82,6 +82,7 @@ router.post('/grabaragenda', (req, res) => {
       // Obtener una conexión del pool
       connection = await pool.getConnection();
       const { mes, anio } = req.body;
+      console.log(req.body);
       const resultado = await connection.execute("SELECT nameevent as title, hourevent as hour, statusevent as state, DAY(STR_TO_DATE(dayevent, '%d/%m/%Y')) as day, dayevent as fechaevento FROM eventos " +
       "WHERE YEAR(STR_TO_DATE(dayevent, '%d/%m/%Y')) = " + anio + " AND MONTH(STR_TO_DATE(dayevent, '%d/%m/%Y')) = " + mes );
       const [rows] = resultado;
@@ -90,9 +91,7 @@ router.post('/grabaragenda', (req, res) => {
       return null;
       }
       const resultados = rows;
-        return resultados; 
-
-
+      return resultados;  
 
         } catch (error) {
             console.error('Error en la consulta:', error);

@@ -1,0 +1,2267 @@
+    1  mvn clean generate-sources
+    2  mvn clean install -DskipTests=true
+    3  cd fc-monitor-web/target
+    4  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-monitor.jar
+    5  git push origin release/4.5.7-RELEASE-MIGRA
+    6  git push origin release/4.5.4-RELEASE-MIGRA
+    7  git push origin release/4.5.7-RELEASE-MIGRA
+    8  git push origin release/4.5.6-RELEASE-MIGRA
+    9  git push origin release/4.4.3-RELEASE-MIGRA
+   10  git status
+   11  git add .
+   12  git status
+   13  git commit -m "migracion"
+   14  git status
+   15  git add .
+   16  git status
+   17  git add .
+   18  -f
+   19  git add . -f
+   20  git status
+   21  git add .
+   22  git commit -m "migracion"
+   23  git status
+   24  git add .
+   25  git commit -m "migracion"
+   26  git status
+   27  git add .
+   28  git status
+   29  git commit -m "migracion"
+   30  git status
+   31  git add .
+   32  git config advice.addIgnoredFile false
+   33  git add .
+   34  cd ..
+   35  git add .
+   36  git commit -m "migracion"
+   37  cd ..
+   38  git status
+   39  git add .
+   40  git status
+   41  git commit -m "migracion"
+   42  git status
+   43  git add .
+   44  git commit -m "migracionv2"
+   45  cd ..
+   46  cd fc-monitor
+   47  git status
+   48  git restore --staged
+   49  cd ..
+   50  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-monitor/-/tree/release/4.5.4-RELEASE-MIGRA\?ref_type\=heads
+   51  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-monitor/-/tree/release/4.5.4-RELEASE-MIGRA\?ref_type\=headshttps://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-monitor/-/tree/release/4.5.4-RELEASE-MIGRA\?ref_type\=heads
+   52  https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-monitor.git
+   53  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-monitor.git
+   54  cd fc-monitor
+   55  git checkout release/4.5.4-RELEASE-MIGRA
+   56  git status
+   57  git add .
+   58  git commit -m "migracion"
+   59  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital 
+   60  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-clientes.git
+   61  cd fc-clientes
+   62  git checkout develop
+   63  mvn clean install -DskipTests=true
+   64  mvn clean generate-sources
+   65  git satus 
+   66  git status 
+   67  git add .
+   68  git checkout release/4.5.4-RELEASE-MIGRA
+   69  git pull
+   70  git fetch
+   71  git checkout release/4.5.4-RELEASE-MIGRA
+   72  git checkout release/4.5.7-RELEASE-MIGRA
+   73  git status 
+   74  git commit -m "miprimeravez"
+   75  git checkout release/4.5.7-RELEASE-MIGRA
+   76  git status 
+   77  git add .
+   78  git commit -m "migrav3"
+   79  git push origin release/4.5.7-RELEASE-MIGRA
+   80  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital
+   81  cd fc-plin
+   82  git status
+   83  git add .
+   84  git status
+   85  git commit -m "migrav3"
+   86  git push origin release/4.5.7-RELEASE-MIGRA
+   87  git checkout develop
+   88  git status
+   89  git push origin develop
+   90  git status
+   91  git add .
+   92  git status
+   93  git commit -m "adecuacionesRetomaGrupal"
+   94  git push origin develop
+   95  history
+   96  cd fc-client-web/target
+   97  ll
+   98  CD generated-sources
+   99  ll
+  100  cd generated-sources
+  101  ll
+  102  cd ..
+  103  cd..
+  104  cd ..
+  105  mvn clean generate-sources
+  106  mvn clean install -DskipTests=true
+  107  cd fc-client-web/target
+  108  ll
+  109  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  110  mvn clean generate-sources
+  111  mvn clean install -DskipTests=true
+  112  cd ..
+  113  mvn clean generate-sources
+  114  mvn clean install -DskipTests=true
+  115  cd fc-client-web/target
+  116  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  117  cd ..
+  118  mvn clean generate-sources
+  119  mvn clean install -DskipTests=true
+  120  cd fc-client-web/target
+  121  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  122  cd ..
+  123  mvn clean generate-sources
+  124  mvn clean install -DskipTests=true
+  125  cd fc-client-web/target
+  126  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  127  cd ..
+  128  mvn clean generate-sources
+  129  mvn clean install -DskipTests=true
+  130  cd fc-client-web/target
+  131  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  132  cd ..
+  133  mvn clean generate-sources
+  134  mvn clean install -DskipTests=true
+  135  cd fc-client-web/target
+  136  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  137  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital
+  138  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc-cuentas
+  139  git checkout develop
+  140  cd ..
+  141  git add .
+  142  git status
+  143  git commit -m "actualizacionDTOetapa"
+  144  git push origin develop
+  145  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/
+  146  cd fc-creditos
+  147  git checkout develop
+  148  git status
+  149  git add .
+  150  git commit -m "paramsotpactualizado"
+  151  git push origin develop
+  152  git checkout release/4.5.7-RELEASE-MIGRA
+  153  mvn clean generate-sources
+  154  mvn clean install -DskipTests=true
+  155  cd fc-client-web
+  156  cd target
+  157  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  158  cd ..
+  159  git add .
+  160  git status
+  161  git commit -m "getQRGroup-test"
+  162  git push origin develop
+  163  mvn clean generate-sources
+  164  mvn clean install -DskipTests=true
+  165  mvn clean generate-sources
+  166  mvn clean install -DskipTests=true
+  167  mvn clean generate-sources
+  168  mvn clean install -DskipTests=true
+  169  cd fc-client-web/target
+  170  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  171  cd ..
+  172  mvn clean generate-sources
+  173  mvn clean install -DskipTests=true
+  174  mvn clean generate-sources
+  175  mvn clean install -DskipTests=true
+  176  cd fc-client-web/target
+  177  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  178  cd ..
+  179  mvn clean generate-sources
+  180  mvn clean install -DskipTests=true
+  181  cd fc-client-web/target
+  182  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  183  cd ..
+  184  mvn clean generate-sources
+  185  mvn clean install -DskipTests=true
+  186  git add .
+  187  git status
+  188  git commit -m "logsparaguardado"
+  189  git push origin develop
+  190  git add .
+  191  git commit -m "logsparaguardado2"
+  192  git push origin develop
+  193  cd fc-client-web/target
+  194  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  195  cd ..
+  196  cd fc-cuentas
+  197  git status
+  198  git checkout release/4.5.7-RELEASE-MIGRA
+  199  git status
+  200  git checkout fc-account-integration/src/main/java/org/fmbbva/movcli/fc/bancamovil/account/services/impl/TransferenceServiceImpl.java
+  201  git checkout release/4.5.4-RELEASE-MIGRA
+  202  git status
+  203  git add .
+  204  git commit -m "migra"
+  205  git push origin release/4.5.4-RELEASE-MIGRA
+  206  cd ..
+  207  cd fc-clientes
+  208  cd fc-client-web/target
+  209  git status
+  210  cd ..
+  211  mvn clean generate-sources
+  212  mvn clean install -DskipTests=true
+  213  cd fc-client-web/target
+  214  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  215  cd ..
+  216  mvn clean generate-sources
+  217  mvn clean install -DskipTests=true
+  218  cd fc-client-web/target
+  219  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  220  cd ..
+  221  git status
+  222  git ad .
+  223  git add .
+  224  git status
+  225  git commit -m "mejorasqr"
+  226  git push origin develop
+  227  cd ..
+  228  cd fc-cuentas
+  229  git checkout release/4.5.5-RELEASE
+  230  git status
+  231  git checkout develop
+  232  git checkout release/4.5.5-RELEASE
+  233  git checkout release/4.5.7-RELEASE-MIGRA
+  234  git pull
+  235  git checkout release/4.5.5-RELEASE
+  236  git status
+  237  git add .
+  238  git status
+  239  git commit -m "migracionnew"
+  240  git push origin release/4.5.5-RELEASE
+  241  cd /Users/jairfredyluritalopez/_Projects/_Financiera/Middle_Banca\ Grupal/2024/Mantenimiento/ase-bg-fc-middle 
+  242  git status
+  243  git add .
+  244  git status
+  245  mvn clean generate-sources
+  246  mvn clean install -DskipTests=true
+  247  cd ..
+  248  cd fc-clientes/
+  249  mvn clean generate-sources
+  250  mvn clean install -DskipTests=true
+  251  git status
+  252  git add .
+  253  git status
+  254  git commit -m "comentarsetstatususer"
+  255  git push origin develop
+  256  git status
+  257  git add .
+  258  git status"\n
+  259  git status\n
+  260  git add .\n
+  261  git commit -m "se_corrige_seteo_statususer"
+  262  git push origin develop
+  263  cd ..
+  264  cd ,,
+  265  cd ..
+  266  cd Banca_Digital
+  267  cd fc-monitor
+  268  git status
+  269  git add .
+  270  git status
+  271  git commit -m "nuevocambio"
+  272  git push origin release/4.5.4-RELEASE-MIGRA
+  273  git status
+  274  cd ..
+  275  cd fc-clientes
+  276  git status
+  277  git add .
+  278  git status
+  279  git commit -m "logsdeseteo"
+  280  git push origin develop
+  281  git add .
+  282  git commit -m "logsdeseteo2"
+  283  git push origin develop
+  284  git status
+  285  git add .
+  286  git commit -m "qrchange"
+  287  git push origin develop
+  288  mvn clean generate-sources
+  289  mvn clean install -DskipTests=true
+  290  git status
+  291  cd fc-client-web/target
+  292  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-client.jar
+  293  cd ..
+  294  git status
+  295  git add .
+  296  git status
+  297  git commit -m "qrchangefinal"
+  298  git push origin develop
+  299  flutter run --flavor dev -t lib/ui/main_dev.dart
+  300  flutter run --flavor dev -t lib/main_dev.dart
+  301  git checkout develop
+  302  flutter run --flavor dev -t lib/main_dev.dart
+  303  mvn clean generate-sources
+  304  mvn clean install -DskipTests=true
+  305  mvn clean generate-sources
+  306  mvn clean install -DskipTests=true
+  307  git status
+  308  git commit -m "qrfecha_hora_generacion"
+  309  git add .
+  310  git commit -m "qrfecha_hora_generacion"
+  311  git push origin develop
+  312  cd ..
+  313  cd fc-posicion-global
+  314  git status
+  315  git add .
+  316  git status
+  317  git commit -m "migrav2"
+  318  git push origin release/4.4.3-RELEASE-MIGRA
+  319  git status
+  320  cd ..
+  321  cd fc-clientes
+  322  git status
+  323  git add .
+  324  git status
+  325  git commit -m "fecha_hora_qr"
+  326  git push origin develop
+  327  git status
+  328  git add .
+  329  git status
+  330  git commit -m "fecha_hora_qr2"
+  331  git push origin develop
+  332  sudo gem install cocoapods
+  333  flutter run --flavor dev --target lib/main_dev.dart\n
+  334  pub get
+  335  flutter pub get
+  336  flutter run --flavor dev --target lib/main_dev.dart\n
+  337  flutter pub get
+  338  flutter run --flavor dev --target lib/main_dev.dart\n
+  339  flutter run -t lib/main_web.dart\n
+  340  flutter run -t lib/main_web.dart --flavor dev\n
+  341  flutter run --flavor dev --target lib/main_dev.dart\n
+  342  flutter doctor
+  343  flutter config --android-sdk
+  344  flutter doctor
+  345  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc-clientes 
+  346  mvn clean generate-sources
+  347  mvn clean install -DskipTests=true
+  348  git status
+  349  git add .
+  350  git status
+  351  git commit -m "fecha_hora_qr3"
+  352  git push origin develop
+  353  flutter doctor\n
+  354  export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
+  355  export PATH=$ANDROID_SDK_ROOT/tools:$PATH
+  356  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/elevatron_web 
+  357  git init
+  358  git config list
+  359  git config --list
+  360  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/elevatron_web 
+  361  git clone  https://github.com/NewxorBoss1521/ElevatronWeb.git
+  362  git init
+  363  git add README.md
+  364  git status
+  365  git add .
+  366  git status
+  367  git commit -m "primer_commit_elevatro_nweb"
+  368  git branch -M main
+  369  git remote add origin https://github.com/NewxorBoss1521/ElevatronWeb.git
+  370  git push -u origin main
+  371  git push origin main
+  372  npm install -g firebase-tools
+  373  ping 54.76.148.112
+  374  sudo nano /etc/hosts\n
+  375  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/elevatron_web 
+  376  firebase login
+  377  npm install -g firebase-tools
+  378  npm help config
+  379  sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+  380  npm install -g firebase-tools
+  381  telnet 54.76.148.112 8081\n
+  382  npm help config
+  383  npm install -g firebase-tools
+  384  DDsudo npm install --unsafe-perm -g firebase-tools
+  385  sudo npm install --unsafe-perm -g firebase-tools
+  386  npm --v
+  387  npm install latest-version
+  388  npm install -g firebase-tools
+  389  firebase login
+  390  npm install latest-version
+  391  firebase login
+  392  npm install latest-version
+  393  cd ..
+  394  npm install latest-version
+  395  firebase login
+  396  node -v
+  397  npm install npm -g
+  398  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron 
+  399  cd elevatron_web
+  400  node -v
+  401  nvm install latest
+  402  nvm install 18\n
+  403  nvm use 18\n
+  404  firebase login
+  405  npm install -g firebase-tools
+  406  npm config fix
+  407  npm install -g firebase-tools
+  408  firebase login
+  409  firebase init
+  410  firebase login
+  411  firebase init
+  412  firebase deploy
+  413  firebase init
+  414  firebase deploy --only hosting:ascensoreselevatron
+  415  npm install -g firebase-tools
+  416  firebase deploy --only hosting:ascensoreselevatron
+  417  flutter build web 
+  418  firebase deploy --only hosting:ascensoreselevatron
+  419  npm install -g firebase-tools
+  420  firebase login
+  421  firebase init
+  422  firebase deploy
+  423  cd ..
+  424  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/Web_Elevatron 
+  425  git clone https://github.com/NewxorBoss1521/ElevatronWeb.git
+  426  flutter build web 
+  427  npm install -g firebase-tools
+  428  node -v
+  429  import path from 'node:path';\n
+  430  npm cache clean --force\n
+  431  npm install -g firebase-tools
+  432  cd ElevatronWeb
+  433  npm install -g firebase-tools
+  434  firebase login
+  435  firebase init
+  436  firebase deploy
+  437  git status
+  438  git add .
+  439  git commit -m "deploy_commit_elevatron_web"
+  440  git push origin main
+  441  firebase init
+  442  git status
+  443  firebase init
+  444  npm install 18
+  445  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/elevatron_web 
+  446  firebase init
+  447  npm install 18
+  448  npm install -g firebase-tools
+  449  node -v
+  450  nvm install 18\n
+  451  nvm use 18\n
+  452  npm install -g firebase-tools
+  453  firebase init
+  454  firebase deploy
+  455  git init
+  456  firebase init
+  457  firebase deploy --only hosting:ascensoreselevatron
+  458  firebase init
+  459  firebase deploy --only hosting:ascensoreselevatron
+  460  npm install -g firebase-tools
+  461  firebase init
+  462  firebase deploy
+  463  firebase list
+  464  firebase projects:list
+  465  firebase use AscensoresElevatron
+  466  firebase use ascensoreselevatron-12b3f
+  467  firebase deploy --only hosting:ascensoreselevatron
+  468  firebase deploy
+  469  firebase use ascensoreselevatron
+  470  firebase projects:list
+  471  nvm install 18
+  472  nvm use 18
+  473  firebase projects:list
+  474  npm install -g firebase-tools
+  475  firebase init
+  476  firebase deploy
+  477  firebase deploy --only hosting:ascensoreselevatron
+  478  firebase deploy --only hosting:ascensoreselevatron-12b3f
+  479  firebase deploy
+  480  firebase init
+  481  firebase deploy
+  482  firebase init
+  483  firebase deploy
+  484  npm install -g firebase-tools
+  485  firebase projects:list
+  486  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/_ElevatronWebSite 
+  487  git clone https://github.com/NewxorBoss1521/ElevatronWeb.git
+  488  flutter build web 
+  489  npm install -g firebase-tools
+  490  nvm use 18
+  491  npm install -g firebase-tools
+  492  firebase init
+  493  firebase projects:list
+  494  firebase deploy
+  495  firebase projects:list
+  496  firebase use Elevatronproject
+  497  firebase use elevatronproject
+  498  firebase deploy
+  499  firebase deploy --only hosting:ascensoreselevatron-1
+  500  firebase deploy
+  501  firebase init
+  502  firebase deploy
+  503  firebase deploy --only hosting:ascensoreselevatron-1
+  504  firebase projects:list
+  505  firebase init
+  506  firebase deploy --only hosting:ascensoreselevatron-1
+  507  firebase deploy
+  508  firebase projects:list
+  509  npm install -g firebase-tools
+  510  firebase init
+  511  firebase deploy
+  512  firebase init
+  513  firebase deploy
+  514  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc-posicion-global 
+  515  git checkout release/4.4.3-RELEASE
+  516  history
+  517  git status
+  518  git push origin release/4.4.3-RELEASE
+  519  cd ..
+  520  cd fc-creditos
+  521  git checkout release/4.5.7-RELEASE
+  522  git status
+  523  git add .
+  524  git status
+  525  git commit -m "deploy_qa"
+  526  git push origin release/4.5.7-RELEASE
+  527  cd ..
+  528  cd fc-clientes
+  529  git checkout release/4.5.7-RELEASE
+  530  git status
+  531  git add .
+  532  git status
+  533  git commit -m "deploy_qa"
+  534  git push origin release/4.5.7-RELEASE
+  535  firebase init
+  536  nvm use 18
+  537  firebase init
+  538  firebase deploy
+  539  firebase projects:list
+  540  firebase init
+  541  firebase deploy
+  542  npm install -g firebase-tools
+  543  firebase init
+  544  firebase deplo
+  545  firebase deploy
+  546  firebase deploy --only hosting:ascensoreselevatron-1
+  547  firebase deploy --only hosting:prueba1234567789
+  548  npm install -g firebase-tools
+  549  firebase init
+  550  firebase deploy --only hosting:prueba1234567789
+  551  git init
+  552  firebase init 
+  553  firebase deploy
+  554  firebase init 
+  555  firebase deploy
+  556  firebase deploy --only hosting:prueba1234567789
+  557  firebase init
+  558  cd ..
+  559  cd fc-cuentas
+  560  git status
+  561  git add .
+  562  git commit -m "deploy_qa"
+  563  git push origin release/4.5.5-RELEASE
+  564  git status
+  565  cd
+  566  cd ..
+  567  cd /Users/jairfredyluritalopez/_RedEyesTI/abc 
+  568  cd flutter_application_1/
+  569  flutter devices
+  570  sudo xcodebuild -license
+  571  flutter devices
+  572  flutter doctor\n
+  573  cd /Users/jairfredyluritalopez/Library/Android/sdk
+  574  nano ~/.bash_profile
+  575  cd /Users/jairfredyluritalopez/Library/Android/sdk
+  576  export ANDROID_HOME=/Users/jairfredyluritalopez/Library/Android/sdk
+  577  export ANDROID_SDK_ROOT=/Users/jairfredyluritalopez/Library/Android/sdk
+  578  export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
+  579  export PATH=$ANDROID_SDK_ROOT/tools:$PATH
+  580  flutter doctor\n
+  581  java -version
+  582  export ANDROID_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.15.1.jdk
+  583  flutter doctor\n
+  584  java -version
+  585  export JAVA_HOME= /usr/libexec/java_home -v 11.0.15.1
+  586  export JAVA_HOME= /Library/Java/JavaVirtualMachines/ -v 11.0.15.1
+  587  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.15.1.jdk/Contents/Home
+  588  flutter doctor\n
+  589  flutter doctor --android-licenses
+  590  flutter devices
+  591  flutter doctor --android-licenses
+  592  java -version\n
+  593  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+  594  java -version\n
+  595  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+  596  export PATH=$JAVA_HOME/bin:$PATH
+  597  java -version\n
+  598  flutter doctor 
+  599  flutter doctor --android-licenses
+  600  flutter doctor 
+  601  export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+  602  flutter doctor 
+  603  flutter devices
+  604  flutter doctor 
+  605  ls ~/Library/Android/sdk\n
+  606  echo $ANDROID_HOME\n
+  607  source ~/.bash_profile  # O ~/.zshrc si usas Zsh\n
+  608  cd /Users/jairfredyluritalopez/
+  609  source ~/.bash_profile  # O ~/.zshrc si usas Zsh\n
+  610  source ~/.bash_profile\n
+  611  java -version
+  612  flutter doctor 
+  613  export ANDROID_HOME=$HOME/Library/Android/sdk
+  614  flutter doctor 
+  615  export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+  616  flutter doctor 
+  617  flutter config --android-studio-dir="/Applications/Android Studio.app/Contents"\n
+  618  flutter doctor 
+  619  flutter config\n--android-studio-dir
+  620  flutter config --android-studio-dir="/Applications/Android Studio.app/Contents"\n
+  621  flutter doctor
+  622  flutter doctor 
+  623  ls /Applications/Android\ Studio.app
+  624  ls /Applications/Android\ Studio.app\n
+  625  mdfind "kMDItemDisplayName == 'Android Studio'"
+  626  java -version
+  627  flutter doctor 
+  628  flutter devices
+  629  flutter doctor 
+  630  export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+  631  flutter doctor 
+  632  history
+  633  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+  634  flutter doctor 
+  635  export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
+  636  flutter doctor 
+  637  export ANDROID_HOME=/Users/jairfredyluritalopez/Library/Android/sdk
+  638  export ANDROID_SDK_ROOT=/Users/jairfredyluritalopez/Library/Android/sdk
+  639  export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
+  640  export PATH=$ANDROID_SDK_ROOT/tools:$PATH
+  641  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+  642  flutter doctor 
+  643  flutter devices
+  644  system_profiler SPUSBDataType
+  645  flutter devices
+  646  adb devices
+  647  adb kill-server
+  648  adb start-server
+  649  adb devices
+  650  flutter doctor 
+  651  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/clientes-fc-app 
+  652  flutter build apk --flavor dev -t lib/main_dev.dart
+  653  pub get
+  654  ./gradlew build --refresh-dependencies\n
+  655  build --refresh-dependencies\n
+  656  flutter -v\n
+  657  flutter --version\n
+  658  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  659  flutter clean
+  660  flutter pub get
+  661  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  662  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --debug --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  663  flutter upgrade\n
+  664  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  665  flutter clean
+  666  flutter doc
+  667  flutter doctor
+  668  gradle --version
+  669  brew install gradle
+  670  brew install gradle 7.5
+  671  brew install gradle
+  672  brew update
+  673  brew upgrade
+  674  brew doctor
+  675  brew install gradle
+  676  sudo xcode-select --install\n
+  677  brew install gradle
+  678  brew install --build-from-source python@3.12
+  679  brew install gradle
+  680  brew install --build-from-source python@3.12
+  681  brew install gradle
+  682  gradle --version
+  683  python3.12 --version
+  684  brew install python@3.12
+  685  brew install --build-from-source python@3.12
+  686  brew install expat\n
+  687  brew reinstall python@3.12\n
+  688  brew install --build-from-source python@3.12
+  689  brew uninstall --ignore-dependencies openssl@1.1
+  690  asdf install python 3.12.1
+  691  sudo rm -rf /Library/Developer/CommandLineTools
+  692  xcode-select --install\n\n
+  693  pyenv install 3.9.5
+  694  brew install python@3.12
+  695  brew install --build-from-source python@3.12
+  696  SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk MACOSX_DEPLOYMENT_TARGET=10.14 pyenv install 3.7.3
+  697  make --version\n\n\n
+  698  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\n
+  699  brew install gradle\n
+  700  gradle --version
+  701  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  702  flutter pub outdated
+  703  flutter pub upgrade
+  704  flutter clean
+  705  flutter pub get
+  706  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  707  flutter doctors
+  708  flutter doctor
+  709  gradle --version
+  710  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  711  flutter doctor
+  712  flutter devices
+  713  sudo softwareupdate --install-rosetta --agree-to-license
+  714  flutter devices
+  715  system_profiler SPUSBDataType
+  716  flutter devices
+  717  flutter doctor --android-licenses
+  718  history
+  719  flutter config --android-sdk /Users/jairfredyluritalopez/Library/Android/sdk
+  720  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/clientes-fc-app 
+  721  flutter pub add fingerprintjs
+  722  gradle --version
+  723  ./gradlew wrapper --gradle-version=7.5
+  724  gradle wrapper --gradle-version=7.5
+  725  gradle --version
+  726  env
+  727  history
+  728  brew install gradle 7.5
+  729  gradle --version
+  730  history
+  731  printenv
+  732  flutter clean\n
+  733  flutter pub get\n
+  734  flutter build apk\n
+  735  curl -s "https://get.sdkman.io" | bash\nsource "$HOME/.sdkman/bin/sdkman-init.sh"\n
+  736  sdk install gradle 7.5
+  737  curl -s "https://get.sdkman.io" | bash\nsource "$HOME/.sdkman/bin/sdkman-init.sh"
+  738  curl -s "https://get.sdkman.io" 
+  739  source "$HOME/.sdkman/bin/sdkman-init.sh"\n
+  740  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/clientes-fc-app 
+  741  sdk install gradle 7.5
+  742  curl -s "https://get.sdkman.io" | bash\n
+  743  sdk help
+  744  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/clientes-fc-app 
+  745  sdk help
+  746  sdk install gradle 7.5
+  747  sdk use gradle 7.5
+  748  sdk default gradle 7.5
+  749  gradle --version
+  750  source "$HOME/.sdkman/bin/sdkman-init.sh"\n
+  751  sdk list java
+  752  sdk install java
+  753  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/Web 
+  754  git clone https://github.com/NewxorBoss1521/ElevatronWeb.git
+  755  dart pub global activate flutterfire_cli
+  756  export PATH="$PATH":"$HOME/.pub-cache/bin"
+  757  dart pub global activate flutterfire_cli
+  758  cd ElevatronWeb/
+  759  flutterfire configure --project=elevatronweb-6a251
+  760  firebase init
+  761  nvm use 18
+  762  firebase init
+  763  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/Web 
+  764  cd ElevatronWeb
+  765  npm install -g firebase-tools
+  766  node -v
+  767  npm cache clean --force\n
+  768  node -v
+  769  npm -v\n
+  770  history
+  771  firebase deploy
+  772  firebase init
+  773  nvm use 18
+  774  npm cache clean --force\n
+  775  npm install\n
+  776  npm cache clean --force\n
+  777  npm warn using --force
+  778  npm cache clean \n
+  779  npm cache clean --force\n
+  780  npm install\n
+  781  firebase init
+  782  npm install -g firebase-tools
+  783  firebase deploy
+  784  npm install -g firebase-tools
+  785  firebase deploy
+  786  firebase init
+  787  firebase deploy
+  788  firebase init
+  789  npm install -g firebase-tools
+  790  firebase init
+  791  firebase deploy
+  792  firebase projects:list\n
+  793  firebase use <project-id>\n
+  794  firebase use ElevatronWEB \n
+  795  firebase use elevatronweb \n
+  796  firebase deploy
+  797  history
+  798  flutter build web \n
+  799  firebase deploy
+  800  nvm use 18
+  801  firebase projects:list\n
+  802  firebase use elevatronweb \n
+  803  firebase deploy
+  804  firebase init
+  805  history
+  806  firebase projects:list\n
+  807  firebase use elevatronweb \n
+  808  firebase projects:list\n
+  809  firebase use elevatronweb-6a251 \n
+  810  firebase projects:list\n
+  811  firebase init
+  812  firebase deploy
+  813  firebase init
+  814  firebase deploy
+  815  npm install -g firebase-tools
+  816  firebase init
+  817  firebase deploy
+  818  firebase projects:list\n
+  819  flutter build web \n
+  820  firebase init\n
+  821  firebase deploy\n
+  822  firebase deploy --only hosting:elevatron
+  823  firebase init
+  824  firebase deploy --only hosting:elevatron
+  825  flutter clean\n
+  826  flutter build web \n
+  827  firebase init
+  828  firebase deploy --only hosting:elevatron
+  829  git add 
+  830  git status
+  831  git add .
+  832  git status
+  833  git commit -m "despliegue_a_internet"
+  834  git push origin main
+  835  history\n
+  836  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/Web/ElevatronWeb 
+  837  git status
+  838  git add .
+  839  git status
+  840  git commit -m "actulizaciones_01_10_2024"
+  841  git push origin main
+  842  cd /Users/jairfredyluritalopez/_RedEyesTI/prueba\ charts 
+  843  git clone https://github.com/imaNNeo/fl_chart.git
+  844  cd /Users/jairfredyluritalopez/_Projects/_Financiera/Middle_Banca\ Grupal/2024/Mantenimiento/ase-bg-fc-middle 
+  845  git status
+  846  cd /Users/jairfredyluritalopez/_Projects/_Financiera/Middle_Banca\ Grupal/2024/Mantenimiento/ase-bg-fc-middle 
+  847  mvn clean generate-sources
+  848  java -version
+  849  sdk list java\n
+  850  history
+  851  defaults write com.apple.Finder AppleShowAllFiles true
+  852  killall Finder
+  853  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202/Contents/Home
+  854  mvn clean generate-sources
+  855  java -version
+  856  history 
+  857  cd /Users/jairfredyluritalopez/_Projects/_Financiera/Middle_Banca\ Grupal/2024/Mantenimiento/ase-bg-fc-middle 
+  858  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+  859  mvn clean generate-sources
+  860  mvn clean install -DskipTests=true
+  861  mvn clean package
+  862  flutter doctor\n
+  863  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/clientes-fc-app 
+  864  flutter doctor\n
+  865  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/gersonsilva/archivos_gsilva/Key-App-Clientes-Flutter/debug-dev
+  866  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  867  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/octubre 
+  868  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/clientes-fc-app.git
+  869  cd clientes-fc-app
+  870  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  871  gradle --version
+  872  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  873  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/\n\n
+  874  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  875  flutter pub get
+  876  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  877  history
+  878  java -version
+  879  flutter clean
+  880  flutter doctor
+  881  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev\n\n
+  882  history
+  883  npm -v
+  884  npm --v
+  885  nvm -v
+  886  nvm use 18
+  887  nvm -v
+  888  history
+  889  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+  890  java -version
+  891  history
+  892  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+  893  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+  894  java -version
+  895  export JAVA_HOME=$(/usr/libexec/java_home -v 19.0.1)
+  896  java -version
+  897  history
+  898  export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.15.1)
+  899  java -version
+  900  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+  901  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+  902  java -version
+  903  sdk list java\n
+  904  export PATH=$JAVA_HOME/bin:$PATH
+  905  java -version
+  906  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+  907  cd ..
+  908  cd..
+  909  cd ..
+  910  cd /Users/jairfredyluritalopez/_Projects/_Financiera/Middle_Banca\ Grupal/2024/Mantenimiento/ase-bg-fc-middle 
+  911  mvn clean generate-sources
+  912  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202/Contents/Home
+  913  export PATH=$JAVA_HOME/bin:$PATH
+  914  java -version
+  915  mvn clean generate-sources
+  916  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+  917  java -version
+  918  export PATH=$JAVA_HOME/bin:$PATH
+  919  java -version
+  920  mvn clean generate-sources
+  921  mvn clean install -DskipTests=true
+  922  mvn clean package
+  923  java -version
+  924  mvn clean generate-sources
+  925  mvn clean install -DskipTests=true
+  926  mvn clean package
+  927  cd /Users/jairfredyluritalopez/_RedEyesTI/Proyecto\ Elevatron/Web/ElevatronWeb 
+  928  git status
+  929  flutter clean
+  930  flutter build web
+  931  firebase deploy --only hosting:elevatron
+  932  nvm -v
+  933  nvm use 18
+  934  firebase deploy --only hosting:elevatron
+  935  history
+  936  firebase init
+  937  firebase deploy --only hosting:elevatron
+  938  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+  939  java -version
+  940  export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.15.1)
+  941  export PATH=$JAVA_HOME/bin:$PATH
+  942  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+  943  java -version
+  944  export JAVA_HOME=$(/usr/libexec/java_home -v 19.0.1)
+  945  export PATH=$JAVA_HOME/bin:$PATH
+  946  java -version
+  947  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+  948  flutter upgrade
+  949  fllutter pub get
+  950  flutter p
+  951  flutter pub get
+  952  
+  953  java -version
+  954  flutter pub get
+  955  /usr/libexec/java_home -V
+  956  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)
+  957  export PATH=$JAVA_HOME/bin:$PATH
+  958  java -version
+  959  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)
+  960  export PATH=$JAVA_HOME/bin:$PATH
+  961  java -version
+  962  flutter pub get
+  963  dart run dynatrace_flutter_plugin
+  964  java -version
+  965  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)
+  966  export PATH=$JAVA_HOME/bin:$PATH
+  967  java -version
+  968  /usr/libexec/java_home -V\n
+  969  /Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home\n
+  970  /Biblioteca/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home\n
+  971  /usr/libexec/java_home -V\n
+  972  java -version
+  973  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)
+  974  export PATH=$JAVA_HOME/bin:$PATH
+  975  java -version
+  976  java -version
+  977  flutter pub get
+  978  flutter pub get
+  979  java -v
+  980  java --version
+  981  curl -s "https://get.sdkman.io" | bash\nsource "$HOME/.sdkman/bin/sdkman-init.sh"\n
+  982  java -v
+  983  java -version
+  984  java -version
+  985  /usr/libexec/java_home -V\n
+  986  nano ~/.zshrc\n
+  987  java -version
+  988  java -version
+  989  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/octubre 
+  990  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/clientes-fc-app.git
+  991  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/octubre clientes-fc-app
+  992  java -version
+  993  git checkout develop
+  994  java -version
+  995  comand not found sdk
+  996  curl -s "https://get.sdkman.io" | bash\n
+  997  source "$HOME/.sdkman/bin/sdkman-init.sh"\n
+  998  sdk version
+  999  sdk install groovy 3.0.9\n
+ 1000  java -version
+ 1001  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/octubre clientes-fc-app
+ 1002  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/octubre
+ 1003  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/octubre/clientes-fc-app
+ 1004  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+ 1005  java -version
+ 1006  /usr/libexec/java_home -V\n
+ 1007  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)
+ 1008  export PATH=$JAVA_HOME/bin:$PATH
+ 1009  java -version
+ 1010  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+ 1011  gradle --version
+ 1012  java -version
+ 1013  flutter doctor
+ 1014  flutter doctor --verbose
+ 1015  java -version
+ 1016  /usr/libexec/java_home -V\n
+ 1017  java -version
+ 1018  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)
+ 1019  export PATH=$JAVA_HOME/bin:$PATH
+ 1020  java -version
+ 1021  java -version
+ 1022  flutter clean
+ 1023  flutter pub get
+ 1024  sdk install groovy 3.0.9\n
+ 1025  sdk install groovy 3.0.9\n
+ 1026  flutter clean
+ 1027  flutter pub get
+ 1028  cd '/Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse'
+ 1029  npm init
+ 1030  node -v
+ 1031  npm cache clean --force
+ 1032  nvm use node
+ 1033  node -v
+ 1034  npm init
+ 1035  npm i express nodemon
+ 1036  nvm use node
+ 1037  npm i express nodemon
+ 1038  ^[[200~npm cache clean --force
+ 1039  npm cache clean --force\n
+ 1040  npm install -g npm\n
+ 1041  cd /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic 
+ 1042  npm init
+ 1043  nvm use node
+ 1044  npm i express nodemon
+ 1045  npm cache clean --force\n
+ 1046  npm install -g npm\n
+ 1047  npm i express nodemon
+ 1048  npm config set registry https://registry.npmjs.org/\n
+ 1049  npm i express nodemon
+ 1050  npm run dev
+ 1051  npm -v
+ 1052  npm run dev
+ 1053  cd ..
+ 1054  npm run dev
+ 1055  cd backlurichic
+ 1056  npm run dev
+ 1057  ls /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic/\n
+ 1058  cd ..
+ 1059  ls /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse\n
+ 1060  cd backlurichic
+ 1061  ls /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic\n
+ 1062  cd src
+ 1063  ls /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic/src\n
+ 1064  cd ..
+ 1065  npm run dev
+ 1066  node src/index.js\n
+ 1067  ls /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic/src\n
+ 1068  node src/index.js\n
+ 1069  cd src
+ 1070  npm run dev
+ 1071  ls 
+ 1072  node src/index.js\n
+ 1073  node index.js\n
+ 1074  node src/index.js\n
+ 1075  ls /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic/\n
+ 1076  node src/index.js\n
+ 1077  node index.js\n
+ 1078  npm run dev
+ 1079  node src/index.js\n
+ 1080  node run dev
+ 1081  npm run dev
+ 1082  npm -v
+ 1083  npm use 18\n
+ 1084  nvm use node
+ 1085  nvm run dev
+ 1086  npm run dev
+ 1087  nvm use node
+ 1088  npm run dev
+ 1089  clear
+ 1090  npm i dotenv -D
+ 1091  npm run dev
+ 1092  npm i mysql
+ 1093  npm run dev
+ 1094  mysql -u root -p\n
+ 1095  touch .zshrc
+ 1096  open .zshrc
+ 1097  export PATH=${PATH}:/usr/local/mysql-9.1.0-macos14-arm64/bin
+ 1098  open .zshrc
+ 1099  mysql -u root -p\n
+ 1100  sudo launchctl unload -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist\n
+ 1101  sudo mysqld_safe --skip-grant-tables &\n
+ 1102  mysql -u root\n
+ 1103  sudo killall mysqld\n
+ 1104  sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist\n
+ 1105  mysql -u root -p\n
+ 1106  npm run dev
+ 1107  clear
+ 1108  npm run dev
+ 1109  INSTALL PLUGIN mysql_native_password SONAME 'auth_socket.so';\n
+ 1110  mysql -u root -p\n
+ 1111  sudo systemctl restart mysql\n
+ 1112  npm update mysql\n
+ 1113  mysql -u root -p\n
+ 1114  export PATH=${PATH}:/usr/local/mysql-9.1.0-macos14-arm64/bin
+ 1115  mysql -u root -p\n
+ 1116  npm run dev
+ 1117  clear
+ 1118  npm run dev
+ 1119  nvm use node
+ 1120  npm run dev
+ 1121  npm install mysql2@latest\n
+ 1122  npm install mysql@latest\n
+ 1123  mysql -u root -p\n
+ 1124  export PATH=${PATH}:/usr/local/mysql-9.1.0-macos14-arm64/bin
+ 1125  mysql -u root -p\n
+ 1126  npm run dev
+ 1127  sudo lsof -i :5000\n
+ 1128  sudo kill -9 680\n
+ 1129  sudo lsof -i :5000\n
+ 1130  sudo kill -9 57244\n
+ 1131  sudo lsof -i :5000\n
+ 1132  sudo kill -9 57289\n
+ 1133  sudo lsof -i :5000\n
+ 1134  sudo lsof -i :5001\n
+ 1135  sudo kill -9 55304\n
+ 1136  sudo lsof -i :5001\n
+ 1137  npm run dev
+ 1138  clear
+ 1139  npm run dev
+ 1140  gradle --version
+ 1141  java -version
+ 1142  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11)
+ 1143  java -version
+ 1144  export JAVA_HOME=$(/usr/libexec/java_home -v 11)\n
+ 1145  java -version
+ 1146  org.gradle.java.home=/path/to/your/java11\n
+ 1147  /usr/libexec/java_home -v 11
+ 1148  flutter devices\n
+ 1149  flutter doctor
+ 1150  sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+ 1151  flutter pub get
+ 1152  flutter build apk --flavor dev -t lib/main_dev.dart --release --split-per-abi --obfuscate --split-debug-info=/Users/jairfredyluritalopez/_Financiera/Banca_Digital/key_appclientes/debug-dev
+ 1153  flutter run --flavor dev -t lib/main_dev.dart
+ 1154  cd ios
+ 1155  pod install
+ 1156  flutter upgrade --force
+ 1157  pod install
+ 1158  pod install --repo-update
+ 1159  git pull 
+ 1160  git checkout dev_web_jair
+ 1161  git pull
+ 1162  pod update 
+ 1163  cd ..
+ 1164  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1165  xcode-select --install\n
+ 1166  xcode-select --update\n
+ 1167  flutter doctor
+ 1168  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1169  cd ios
+ 1170  pod install
+ 1171  cd ..
+ 1172  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1173  brew install ruby
+ 1174  sudo gem install cocoapods
+ 1175  pod cache clean --all
+ 1176  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1177  flutter channel stable
+ 1178  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1179  sudo gem uninstall cocoapods
+ 1180  sudo gem install cocoapods
+ 1181  sudo gem install rexml
+ 1182  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1183  cd ios
+ 1184  pod update
+ 1185  cd ..
+ 1186  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1187  sudo gem install rexml -v 3.2.5
+ 1188  cd ios
+ 1189  pod install
+ 1190  cd ..
+ 1191  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1192  brew update
+ 1193  cd ios
+ 1194  pod repo update
+ 1195  pod install
+ 1196  cd ..
+ 1197  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1198  cd ios
+ 1199  cd ..
+ 1200  rm -rf ios/Pods ios/Podfile.lock
+ 1201  cd ios
+ 1202  pod install
+ 1203  cd ..
+ 1204  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1205  sudo gem uninstall rexml
+ 1206  sudo gem install rexml -v 3.2.6
+ 1207  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1208  cd ios
+ 1209  pod update
+ 1210  cd ..
+ 1211  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1212  sudo gem install cocoapods\n
+ 1213  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1214  rm -rf Pods/
+ 1215  rm -rf ~/Library/Developer/Xcode/DerivedData/
+ 1216  pod install
+ 1217  cd ios
+ 1218  pod install
+ 1219  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1220  rm -rf Pods/
+ 1221  cd ..
+ 1222  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1223  cd ios
+ 1224  cd ..
+ 1225  rm -rf Pods/
+ 1226  pod install
+ 1227  cd ..
+ 1228  pod install
+ 1229  cd clientes-fc-app
+ 1230  cd ios
+ 1231  cd ..
+ 1232  flutter clean
+ 1233  flutter pub get
+ 1234  flutter build ios --flavor dev -t lib/main_dev.dart
+ 1235  flutter run -d chrome -t lib/main_web.dart
+ 1236  git add .
+ 1237  git commit -m "cambios app"
+ 1238  git push origin dev_web_jair
+ 1239  flutter run -d chrome -t lib/main_web.dart
+ 1240  git pull
+ 1241  git satus
+ 1242  git status
+ 1243  git add 
+ 1244  git add .
+ 1245  git commit -m "cambios app_forme_v1"
+ 1246  git push origin dev_web_jair
+ 1247  git pull
+ 1248  git merge origin dev_hb_larry
+ 1249  git merge origin/dev_hb_larry
+ 1250  git push origin dev_web_jair
+ 1251  flutter run -d chrome -t lib/main_web.dart
+ 1252  cd /Users/jairfredyluritalopez/_Projects/_Financiera/Middle_Banca\ Grupal/2024/Mantenimiento/ase-bg-fc-middle 
+ 1253  mvn clean generate-sources
+ 1254  java -version
+ 1255  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 1256  export PATH=$JAVA_HOME/bin:$PATH
+ 1257  java -version
+ 1258  mvn clean generate-sources
+ 1259  mvn clean install -DskipTests=true
+ 1260  mvn clean package
+ 1261  mvn clean generate-sources
+ 1262  mvn clean install -DskipTests=true
+ 1263  mvn clean package
+ 1264  export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.11) 
+ 1265  export PATH=$JAVA_HOME/bin:$PATH
+ 1266  java -version
+ 1267  flutter run -d chrome -t lib/main_web.dart
+ 1268  history
+ 1269  nvm use node
+ 1270  nvm run dev
+ 1271  nvm run nodemon
+ 1272  history
+ 1273  npm runn dev
+ 1274  npm run dev
+ 1275  flutter run -d chrome -t lib/main_web.dart
+ 1276  git merge origin/develop
+ 1277  git pull
+ 1278  git merge origin/develop
+ 1279  git push origin dev_web_jair
+ 1280  flutter run -d chrome -t lib/main_web.dart
+ 1281  nvm run nodemon
+ 1282  npm use 18\n
+ 1283  nvm use node
+ 1284  nvm run nodemon
+ 1285  npm use 18\n
+ 1286  nvm run nodemon
+ 1287  node run dev
+ 1288  nvm run nodemon
+ 1289  nvm --v
+ 1290  npm -v
+ 1291  npm run nodemon
+ 1292  history
+ 1293  npm run dev
+ 1294  cd /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/back 
+ 1295  git clone https://github.com/NewxorBoss1521/backlurichic.git
+ 1296  git config
+ 1297  git config --list
+ 1298  git clone https://github.com/NewxorBoss1521/backlurichic.git
+ 1299  cd /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/back 
+ 1300  git clone https://github.com/NewxorBoss1521/backlurichic.git
+ 1301  ssh-keygen -t ed25519 -C "tu-correo@ejemplo.com"\n
+ 1302  ssh-keygen -t ed25519 -C "jairxll06@gmail.com"\n
+ 1303  git clone https://github.com/NewxorBoss1521/prueba_jair.git
+ 1304  git clone https://github.com/NewxorBoss1521/backlurichic.git
+ 1305  cd /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic 
+ 1306  git init
+ 1307  git status
+ 1308  git add .
+ 1309  git status
+ 1310  git commit -m "primerr commmit de backend lurichic"
+ 1311  git remote add origin https://github.com/NewxorBoss1521/backlurichic.git
+ 1312  git push -u origin main\n
+ 1313  git push origin main\n
+ 1314  git push origin master\n
+ 1315  git status
+ 1316  git clone https://github.com/NewxorBoss1521/backlurichic.git
+ 1317  ssh-keygen -t ed25519 -C "jairxll06@gmail.com"\n
+ 1318  git clone https://github.com/NewxorBoss1521/backlurichic.git
+ 1319  git push origin https://github.com/NewxorBoss1521/backendlurichic.git\n
+ 1320  git remote add origin https://github.com/NewxorBoss1521/backendlurichic.git\n
+ 1321  git init
+ 1322  git status
+ 1323  git remote add origin https://github.com/NewxorBoss1521/backendlurichic.git\n
+ 1324  git push -u origin main 
+ 1325  cd /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic 
+ 1326  git init
+ 1327  git status
+ 1328  git add .
+ 1329  git status
+ 1330  git commit -m "Mi primer commmit de backend lurichic"
+ 1331  git remote add origin https://github.com/NewxorBoss1521/backendlurichic.git
+ 1332  git push -u origin main
+ 1333  git push -u origin master
+ 1334  git config \n
+ 1335  git config --list
+ 1336  npm run dev
+ 1337  npm run nodemon
+ 1338  npm use 18\n
+ 1339  nvm use node
+ 1340  npm run nodemon
+ 1341  npm run dev
+ 1342  git status
+ 1343  git add .
+ 1344  git status
+ 1345  git commit -m "Mi primer commmit de backend lurichic"
+ 1346  git remote add origin https://github.com/NewxorBoss1521/backendlurichic.git
+ 1347  git push -u origin master
+ 1348  /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic 
+ 1349  git init
+ 1350  git status
+ 1351  git add .\n
+ 1352  git status
+ 1353  git commit -m "Mi primer commmit de backend lurichic."
+ 1354  git remote add origin https://github.com/RedEyesTI/backlurichic.git
+ 1355  git push -u origin master
+ 1356  git config --global credential.helper cache\n
+ 1357  git config --list
+ 1358  git add .
+ 1359  git status
+ 1360  git push origin main
+ 1361  git push origin master
+ 1362  git push -u origin master
+ 1363  git remote set-url origin https://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@github.com/RedEyesTI/backlurichic.git\n
+ 1364  git push -u origin master
+ 1365  git status
+ 1366  git add .
+ 1367  git status
+ 1368  git commit -m "configurando comando start"
+ 1369  git push -u origin master
+ 1370  git checkout prod
+ 1371  git pull
+ 1372  git checkout prod
+ 1373  git merge origin/master
+ 1374  git checkout pord
+ 1375  git checkout prod
+ 1376  git status
+ 1377  git push origin/prod
+ 1378  git pull
+ 1379  git status
+ 1380  npm use 18\n
+ 1381  nvm use node
+ 1382  npm run start
+ 1383  git status
+ 1384  git commit -m "configurando comando start v2"
+ 1385  git add .
+ 1386  git commit -m "configurando comando start v2"
+ 1387  git push origin/prod
+ 1388  git remote set-url origin https://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@github.com/RedEyesTI/backlurichic.git\n
+ 1389  git push origin/prod
+ 1390  git push origin prod
+ 1391  npm start
+ 1392  npm run start
+ 1393  nvm use node
+ 1394  npm run start
+ 1395  npm run dev
+ 1396  npm start
+ 1397  npm run dev
+ 1398  npm start
+ 1399  git status
+ 1400  git add .
+ 1401  git commit -m "configurando comando start v3"
+ 1402  git push origin prod
+ 1403  npm start
+ 1404  npm install
+ 1405  npm start
+ 1406  git add .
+ 1407  git commit -m "configurando comando start v4"
+ 1408  git push origin prod
+ 1409  npm start
+ 1410  git commit -m "configurando comando start v5"
+ 1411  git status
+ 1412  git add .
+ 1413  git commit -m "configurando comando start v5"
+ 1414  git push origin prod
+ 1415  node --v
+ 1416  node --version
+ 1417  git add .
+ 1418  git status
+ 1419  git commit -m "configurando comando start v6"
+ 1420  git push origin prod
+ 1421  git status
+ 1422  git add .
+ 1423  git commit -m "configurando comando start v7"
+ 1424  git push origin prod
+ 1425  flutter build apk --split-per-abi
+ 1426  flutter run -d chrome -t lib/main_web.dart
+ 1427  git status
+ 1428  npm start
+ 1429  git status
+ 1430  git add .
+ 1431  git status
+ 1432  git commit -m "agregamos servicio de resumende pagos"
+ 1433  git status
+ 1434  git push origin prod
+ 1435  flutter build apk --split-per-abi
+ 1436  git status
+ 1437  git add .
+ 1438  git commit -m "formepage_jair"
+ 1439  git merge origin/develop
+ 1440  git pull
+ 1441  git merge origin/develop
+ 1442  flutter run -d chrome -t lib/main_web.dart
+ 1443  flutter pub get
+ 1444  flutter pub run flutter_launcher_icons:main
+ 1445  flutter pub get
+ 1446  dart run flutter_launcher_icons:main
+ 1447  flutter run -d chrome -t lib/main_web.dart
+ 1448  git status
+ 1449  git add .
+ 1450  git commit -m "formepage_jair_2024"
+ 1451  git push origin dev_web_jair
+ 1452  git merge origin/dev_hb_larry
+ 1453  git push origin dev_web_jair
+ 1454  flutter run -d chrome -t lib/main_web.dart
+ 1455  history
+ 1456  flutter run -d chrome -t lib/main_web.dart
+ 1457  npm start
+ 1458  nvm use node
+ 1459  npm start
+ 1460  git add .
+ 1461  git status
+ 1462  git commit -m "cambio estructura tabla pagos"
+ 1463  git push origin prod
+ 1464  npm start
+ 1465  git status
+ 1466  npm start
+ 1467  git status
+ 1468  git add .
+ 1469  git commit -m "agregamos servicio de detalle pagos"
+ 1470  git push origin prod
+ 1471  npm start
+ 1472  git add .
+ 1473  git commit -m "agregamos servicio de detalle pagos como metodo post"
+ 1474  git push origin prod
+ 1475  git commit -m "agregamos servicio de detalle pagos como metodo post 2"
+ 1476  git add .
+ 1477  git commit -m "agregamos servicio de detalle pagos como metodo post 2"
+ 1478  git push origin prod
+ 1479  git commit -m "agregamos servicio de detalle pagos actualizamos el resultados sin.."
+ 1480  git add .
+ 1481  git commit -m "agregamos servicio de detalle pagos actualizamos el resultados sin.."
+ 1482  git push origin prod
+ 1483  npm start
+ 1484  history
+ 1485  flutter build apk --split-per-abi
+ 1486  open ios/Runner.xcworkspace\n
+ 1487  flutter build ios
+ 1488  flutter run -d chrome -t lib/main_web.dart
+ 1489  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc_configuration 
+ 1490  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-configuration.git
+ 1491  git pull
+ 1492  git status
+ 1493  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc_configuration fc-configuration
+ 1494  git pull
+ 1495  git checkout rama_banner_hb_jair
+ 1496  git satus
+ 1497  git status
+ 1498  git add .
+ 1499  git commit -m "nuevo servicio banner_hb"
+ 1500  mvn clean generate-sources
+ 1501  history
+ 1502  export JAVA_HOME=$(/us/libexec/java_home -v 1.8.0_202)
+ 1503  history
+ 1504  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 1505  history
+ 1506  mvn clean generate-sources
+ 1507  java -version
+ 1508  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 1509  export PATH=$JAVA_HOME/bin:$PATH
+ 1510  java -version
+ 1511  mvn clean generate-sources
+ 1512  mvn clean install -DskipTests=true
+ 1513  mvn clean generate-sources
+ 1514  nvm use node
+ 1515  npm start
+ 1516  git add .
+ 1517  git commit -m "Actualiza consulta detallepago de mayor a menor"
+ 1518  git push origin prod
+ 1519  flutter build apk --split-per-abi
+ 1520  git add .
+ 1521  git commit -m "se agrega 2 campos"
+ 1522  git push origin prod
+ 1523  nvm use node
+ 1524  npm start
+ 1525  git add .
+ 1526  git commit -m "Se agrega 2 campos, correccion de parametros "
+ 1527  git push origin prod
+ 1528  npm start
+ 1529  git add .
+ 1530  git commit -m "Se agrega funcionalidad de eliminacion de pago"
+ 1531  git push origin prod
+ 1532  npm start
+ 1533  git commit -m "Se agrega funcionalidad de eliminacion de pago v2"
+ 1534  git add .
+ 1535  git commit -m "Se agrega funcionalidad de eliminacion de pago v2"
+ 1536  git push origin prod
+ 1537  flutter build apk --split-per-abi
+ 1538  mvn clean generate-sources
+ 1539  java -version
+ 1540  mvn clean generate-sources
+ 1541  mvn clean install -DskipTests=true
+ 1542  mvn clean generate-sources
+ 1543  mvn clean install -DskipTests=true
+ 1544  mvn clean generate-sources
+ 1545  mvn clean install -DskipTests=true
+ 1546  mvn clean generate-sources
+ 1547  mvn clean install -DskipTests=true
+ 1548  mvn clean generate-sources
+ 1549  mvn clean install -DskipTests=true
+ 1550  mvn clean generate-sources
+ 1551  mvn clean install -DskipTests=true
+ 1552  mvn clean generate-sources
+ 1553  mvn clean install -DskipTests=true
+ 1554  mvn clean generate-sources
+ 1555  mvn clean install -DskipTests=true
+ 1556  mvn clean generate-sources
+ 1557  mvn clean install -DskipTests=true
+ 1558  mvn clean generate-sources
+ 1559  mvn clean install -DskipTests=true
+ 1560  mvn clean generate-sources
+ 1561  mvn clean install -DskipTests=true
+ 1562  mvn clean generate-sources
+ 1563  mvn clean install -DskipTests=true
+ 1564  nvm use node
+ 1565  npm start
+ 1566  git add .
+ 1567  git commit -m "Se agrega funcionalidad de mercado"
+ 1568  git push origin prod
+ 1569  git add .
+ 1570  git commit -m "Se agrega funcionalidad de mercado v2"
+ 1571  git push origin prod
+ 1572  npm start
+ 1573  git status
+ 1574  git add .
+ 1575  git commit -m "Se agrega funcionalidad de agenda v1"
+ 1576  git push origin prod
+ 1577  npm start
+ 1578  git add .
+ 1579  git commit -m "Se agrega total de suma del mes"
+ 1580  git push origin prod
+ 1581  npm start
+ 1582  git add .
+ 1583  git commit -m "Se agrega consulta de agenda"
+ 1584  git push origin prod
+ 1585  git add .
+ 1586  git commit -m "Se agrega consulta de agendav2"
+ 1587  git push origin prod
+ 1588  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc_configuration fc-configuration
+ 1589  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc_configuration
+ 1590  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc_configuration/fc-configuration
+ 1591  mvn clean generate-sources
+ 1592  git add .
+ 1593  git commit -m "banner"
+ 1594  git push origin rama_banner_hb_jair
+ 1595  cd ..
+ 1596  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc_configuration 
+ 1597  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-configuration.git
+ 1598  cd fc-configuration
+ 1599  git checkout branch_banner_homebanking
+ 1600  git pull
+ 1601  git checkout branch_banner_homebanking
+ 1602  mvn clean generate-sources
+ 1603  mvn clean install -DskipTests=true
+ 1604  flutter build apk --split-per-abi
+ 1605  npm start
+ 1606  nvm use node
+ 1607  npm start
+ 1608  git add .
+ 1609  git commit -m "funcionalidad de totales principales de app"
+ 1610  git push origin prod
+ 1611  git add .
+ 1612  git commit -m "funcionalidad de totales principales de app v2"
+ 1613  git push origin prod
+ 1614  flutter build apk --split-per-abi
+ 1615  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc_configuration/fc-configuration 
+ 1616  mvn clean generate-sources
+ 1617  java -version
+ 1618  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 1619  export PATH=$JAVA_HOME/bin:$PATH
+ 1620  mvn clean generate-sources
+ 1621  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/
+ 1622  cd fc-cuentas
+ 1623  git checkout release/4.6.3-RELEASE
+ 1624  git pull
+ 1625  git checkout release/4.6.3-RELEASE
+ 1626  cd ..
+ 1627  cd fc-plin
+ 1628  git checkout release/4.6.3-RELEASE
+ 1629  git pull
+ 1630  git checkout release/4.6.3-RELEASE
+ 1631  git checkout develop
+ 1632  mvn clean generate-sources
+ 1633  java -version
+ 1634  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 1635  export PATH=$JAVA_HOME/bin:$PATH
+ 1636  java -version
+ 1637  mvn clean generate-sources
+ 1638  rm -rf ~/.m2/repository/org/fmbbva/movcli/fc/bancamovil/fc-plin-integration\n
+ 1639  mvn clean install\n
+ 1640  mvn clean generate-sources
+ 1641  mvn clean install -DskipTests=true
+ 1642  history
+ 1643  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/nsbt 
+ 1644  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-bm-nsbt-connect.git
+ 1645  cd fc-bm-nsbt-connect
+ 1646  git checkout develop
+ 1647  java -version
+ 1648  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 1649  export PATH=$JAVA_HOME/bin:$PATH
+ 1650  java -version
+ 1651  mvn clean generate-sources
+ 1652  mvn clean install -DskipTests=true
+ 1653  git status
+ 1654  git add .
+ 1655  git commit -m "nuevo campo para RTAVALIDAPLIN - TIPMSG"
+ 1656  git push origin develop
+ 1657  mvn clean generate-sources
+ 1658  mvn clean install -DskipTests=true
+ 1659  mvn clean generate-sources
+ 1660  mvn clean install -DskipTests=true
+ 1661  rm -rf ~/.m2/repository\n
+ 1662  mvn clean generate-sources
+ 1663  mvn clean install -DskipTests=true
+ 1664  mvn clean generate-sources
+ 1665  mvn clean install -DskipTests=true
+ 1666  git status
+ 1667  git add .
+ 1668  git commit -m "nuevo campo para RTAVALIDAPLIN - TIPMSG-plin"
+ 1669  git push origin develop
+ 1670  mvn clean generate-sources
+ 1671  mvn clean install -DskipTests=true
+ 1672  git status
+ 1673  mvn clean generate-sources
+ 1674  mvn clean install -DskipTests=true
+ 1675  mvn clean generate-sources
+ 1676  mvn clean install -DskipTests=true
+ 1677  rm -rf ~/.m2/repository\n
+ 1678  mvn clean install\n
+ 1679  mvn clean install -DskipTests=true
+ 1680  mvn clean generate-sources
+ 1681  java -version
+ 1682  mvn clean install -DskipTests=true
+ 1683  git status
+ 1684  git add .
+ 1685  git commit -m "nuevo campo para RTAVALIDAPLIN - TIPMSG-plin-v2"
+ 1686  git push origin develop
+ 1687  mvn clean generate-sources
+ 1688  mvn clean install -DskipTests=true
+ 1689  git status
+ 1690  mvn clean package
+ 1691  mvn clean package -DskipTests
+ 1692  mvn clean generate-sources
+ 1693  mvn clean install -DskipTests=true
+ 1694  mvn clean generate-sources
+ 1695  mvn clean install -DskipTests=true
+ 1696  mvn clean package -DskipTests
+ 1697  mvn clean generate-sources
+ 1698  mvn clean install -DskipTests=true
+ 1699  mvn clean package -DskipTests
+ 1700  git status
+ 1701  git add .
+ 1702  git commit -m "nuevo campo para RTAVALIDAPLIN - TIPMSG-plin-v3"
+ 1703  git push origin develop
+ 1704  cd fc-plin-web/target
+ 1705  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-plin.jar
+ 1706  cd ..
+ 1707  mvn clean generate-sources
+ 1708  mvn clean install -DskipTests=true
+ 1709  mvn clean package -DskipTests
+ 1710  mvn clean package -DskipTests -U -V
+ 1711  git add .
+ 1712  git commit -m "nuevo campo para RTAVALIDAPLI tipmsg"
+ 1713  git push origin develop
+ 1714  mvn clean generate-sources
+ 1715  mvn clean install -DskipTests=true
+ 1716  mvn clean package -DskipTests
+ 1717  mvn clean generate-sources
+ 1718  mvn clean install -DskipTests=true
+ 1719  mvn clean package -DskipTests
+ 1720  git add .
+ 1721  git commit -m "nuevo campo para RTAVALIDAPLI tipmsgl"
+ 1722  git push origin develop
+ 1723  git add .
+ 1724  git commit -m "nuevo campo para RTAVALIDAPLI tipmsgl"
+ 1725  git push origin develop
+ 1726  git add .
+ 1727  git commit -m "nuevo campo para RTAVALIDAPLI tipmsgl2"
+ 1728  git push origin develop
+ 1729  git add .
+ 1730  git commit -m "nuevo campo para RTAVALIDAPLI tipmsgl2"
+ 1731  git push origin develop
+ 1732  git add .
+ 1733  git commit -m "nuevo campo para RTAVALIDAPLI tipmsgl9"
+ 1734  git push origin develop
+ 1735  rm -rf ~/.m2/repository\n
+ 1736  mvn clean install -DskipTests=true
+ 1737  mvn clean package -DskipTests
+ 1738  mvn clean install -DskipTests=true
+ 1739  mvn clean generate-sources
+ 1740  mvn clean install -DskipTests=true
+ 1741  git add .
+ 1742  git commit -m "nuevo campo para RTAVALIDAPLI tipmsgl99"
+ 1743  git push origin develop
+ 1744  mvn clean package -DskipTests
+ 1745  git status
+ 1746  git add .
+ 1747  git commit -m "nuevo campo para RTAVALIDA"
+ 1748  git push origin develop
+ 1749  git status
+ 1750  git commit -m "nuevo campo para RTAVALIDA fc-plin"
+ 1751  git add .
+ 1752  git commit -m "nuevo campo para RTAVALIDA fc-plin"
+ 1753  git push origin develop
+ 1754  git add .
+ 1755  git commit -m "nuevo campo para RTAVALIDA fc-plin gg"
+ 1756  git push origin develop
+ 1757  mvn clean generate-sources
+ 1758  mvn clean install -DskipTests=true
+ 1759  mvn clean package -DskipTests
+ 1760  mvn clean generate-sources
+ 1761  mvn clean install -DskipTests=true
+ 1762  git add .
+ 1763  git commit -m "nuevo campo para RTAVALIDA fc-plin gerson"
+ 1764  git push origin develop
+ 1765  cd fc-plin-web/target
+ 1766  /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-plin.jar
+ 1767  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-plin.jar
+ 1768  cd ..
+ 1769  cd..
+ 1770  cd ..
+ 1771  mvn clean generate-sources
+ 1772  mvn clean install -DskipTests=true
+ 1773  cd fc-plin-web/target
+ 1774  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-plin.jar
+ 1775  mvn clean install -DskipTests=true
+ 1776  mvn clean package -DskipTests
+ 1777  cd ..
+ 1778  mvn clean generate-sources
+ 1779  mvn clean install -DskipTests=true
+ 1780  mvn clean package -DskipTests
+ 1781  git add .
+ 1782  git commit -m "nuevo campo para RTAVALIDA fc-plin-"
+ 1783  git push origin develop
+ 1784  git add .
+ 1785  git commit -m "nuevo campo para RTAVALIDA final"
+ 1786  git push origin develop
+ 1787  git checkout release/4.6.3-RELEASE
+ 1788  git merge origin/develop
+ 1789  git status
+ 1790  git push origin release/4.6.3-RELEASE
+ 1791  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc-cuentas 
+ 1792  git checkout develop
+ 1793  mvn clean generate-sources
+ 1794  mvn clean install -DskipTests=true
+ 1795  mvn clean generate-sources
+ 1796  mvn clean install -DskipTests=true
+ 1797  git status
+ 1798  git add .
+ 1799  git commit -m "nuevo campo para tipmsg final"
+ 1800  git push origin develop
+ 1801  git pull
+ 1802  git status
+ 1803  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc-cuentas
+ 1804  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-cuentas.git
+ 1805  cd fc-cuentas
+ 1806  git pull
+ 1807  git checkout develop
+ 1808  mvn clean install -DskipTests=true
+ 1809  mvn clean generate-sources
+ 1810  git add .
+ 1811  git commit -m "nuevo campo para tipmsg final"
+ 1812  git push origin develop
+ 1813  git checkout release/4.6.3-RELEASE
+ 1814  git merge origin/develop
+ 1815  git status
+ 1816  git push origin release/4.6.3-RELEASE
+ 1817  git pull
+ 1818  git checkout master
+ 1819  git pull
+ 1820  git merge origin/release/4.6.3-RELEASE
+ 1821  git push origin master
+ 1822  cd ..
+ 1823  cd fc-plin
+ 1824  git pull
+ 1825  git checkout master
+ 1826  git merge origin/release/4.6.3-RELEASE
+ 1827  git push origin master
+ 1828  cd 
+ 1829  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/
+ 1830  cd fc-clientes
+ 1831  git pull
+ 1832  git status
+ 1833  git restore .DS_Store
+ 1834  git status
+ 1835  git restore fc-client-web/.DS_Store
+ 1836  git checkout master
+ 1837  git pull
+ 1838  git checkout release/4.6.3-RELEASE
+ 1839  git pull
+ 1840  git checkout master
+ 1841  git merge origin/release/4.6.3-RELEASE
+ 1842  git push origin master
+ 1843  npm start
+ 1844  java -version
+ 1845  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 1846  export PATH=$JAVA_HOME/bin:$PATH
+ 1847  java -version
+ 1848  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital
+ 1849  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-oauth-clientes.git
+ 1850  cd fc-oauth-clientes
+ 1851  git pull
+ 1852  git merge release/4.6.3-RELEASE
+ 1853  git checkout release/4.6.3-RELEASE
+ 1854  mvn clean generate-sources
+ 1855  mvn clean install -DskipTests=true
+ 1856  git diff master release/4.6.3-RELEASE
+ 1857  git checkout master
+ 1858  git merge release/4.6.3-RELEASE
+ 1859  git status
+ 1860  git push origin master
+ 1861  cd /Users/jairfredyluritalopez/_Financiera/Banca\ Grupal 
+ 1862  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/banca-grupal/bancagrupal-app.git
+ 1863  cd bancagrupal-app
+ 1864  git checkout develop
+ 1865  npm uninstall -g ionic
+ 1866  npm i -g @ionic/cli
+ 1867  nvm use node
+ 1868  npm i -g @ionic/cli
+ 1869  ionic cordova build android --prod --release --verbose
+ 1870  npm i -g cordova
+ 1871  ionic cordova build android --prod --release --verbose
+ 1872  cordova telemetry on\n
+ 1873  ionic cordova build android --prod --release --verbose
+ 1874  cordova platform add android --save
+ 1875  npm cache clean --force\n
+ 1876  rm package-lock.json
+ 1877  npm install
+ 1878  cordova platform add cordova-android@11.0.0 --verbose\n
+ 1879  npm install
+ 1880  npm install -g npm@latest\n
+ 1881  nvm install 20
+ 1882  nvm use 20
+ 1883  node -v\n
+ 1884  npm install -g npm@latest\n
+ 1885  npm -v\n
+ 1886  npm install cordova-android@^11.0.0 --save-exact\n
+ 1887  npm cache clean --force\n
+ 1888  npm outdated\n
+ 1889  npm install\n
+ 1890  npx ng update @angular/core @angular/cli\n
+ 1891  ng version\n
+ 1892  npm install -g @angular/cli\n
+ 1893  npm install @angular/cli --save-dev\n
+ 1894  npm exec -- ng update @angular/core @angular/cli\n
+ 1895  ng update @angular/core @angular/cli\n
+ 1896  npm install\n
+ 1897  npm list @angular/common @angular/google-maps\n
+ 1898  npm install @angular/google-maps@latest\n
+ 1899  npm install --legacy-peer-deps\n
+ 1900  cordova platform add cordova-android@11.0.0 --verbose\n
+ 1901  nvm use 20
+ 1902  cordova platform add cordova-android@11.0.0 --verbose\n
+ 1903  npm install\n
+ 1904  npm install @angular/google-maps@latest\n
+ 1905  npm install @angular/google-maps@11.2.3\n
+ 1906  npm use 10
+ 1907  node -v\n
+ 1908  node -ls\n
+ 1909  node ls\n
+ 1910  nvm ls
+ 1911  nvm install 10.16.3
+ 1912  nvm ls
+ 1913  nvm use 10.16.3
+ 1914  npm install @angular/google-maps@11.2.3\n
+ 1915  java -version
+ 1916  export PATH=$JAVA_HOME/bin:$PATH
+ 1917  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 1918  export PATH=$JAVA_HOME/bin:$PATH
+ 1919  npm install @angular/google-maps@11.2.3\n
+ 1920  rm -rf node_modules package-lock.json
+ 1921  npm install\n
+ 1922  npm install @angular/google-maps@11.2.3\n
+ 1923  nvm alias default 16\n
+ 1924  java ls
+ 1925  java --version
+ 1926  java -v
+ 1927  java - version
+ 1928  java -version
+ 1929  sdk list java\n
+ 1930  ls /usr/lib/jvm/\n
+ 1931  ls /Library/Java/JavaVirtualMachines/\n
+ 1932  export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.15.1)
+ 1933  export PATH=$JAVA_HOME/bin:$PATH
+ 1934  java -version
+ 1935  npm install @angular/google-maps@11.2.3\n
+ 1936  cordova platform add cordova-android@11.0.0 --verbose\n
+ 1937  nvm install node
+ 1938  nvm ls
+ 1939  nvm use 10.16.3
+ 1940  npm install -g npm\n
+ 1941  npm cache clean --force\n
+ 1942  rm -rf node_modules package-lock.json
+ 1943  npm install -g npm\n
+ 1944  nvm install 16
+ 1945  npm install -g npm\n
+ 1946  npm install -g npm@6.9\n
+ 1947  nvm use 12\n
+ 1948  nvm install 12\n
+ 1949  nvm use 12\n
+ 1950  npm cache clean --force\n
+ 1951  npm install @angular/google-maps@11.2.3\n
+ 1952  ionic cordova build android --prod --release --verbose
+ 1953  npm install -g ionic@5.4.16\n
+ 1954  ionic cordova build android --prod --release --verbose
+ 1955  npm i -g cordova
+ 1956  ionic cordova build android --prod --release --verbose
+ 1957  ionic cordova --v
+ 1958  ionic cordova -v
+ 1959  ionic cordova build android --prod --release --verbose
+ 1960  ionic cordova platform add android@11.0.0
+ 1961  ionic cordova platform add android@11
+ 1962  sdk -v
+ 1963  sdk ls
+ 1964  sdkmanager --list\n
+ 1965  ionic cordova platform add android@11
+ 1966  ionic cordova platform ls
+ 1967  node -v
+ 1968  node ls
+ 1969  nvm use 10.16.3
+ 1970  ionic cordova platform add android@11
+ 1971  node -v
+ 1972  ionic cordova platform add android@11
+ 1973  npm install macos-release\n
+ 1974  node -v
+ 1975  ionic cordova platform add android@11
+ 1976  ionic cordova platform add android@8
+ 1977  npm install\n
+ 1978  nvm alias default 10.16.3\n
+ 1979  npm install -g ionic\n
+ 1980  ionic -v
+ 1981  npm install -g typescript\n
+ 1982  npm -v
+ 1983  npm -version
+ 1984  nvm use 10.16.3
+ 1985  npm -v
+ 1986  node -v
+ 1987  npm -v
+ 1988  npm --v
+ 1989  npm -version
+ 1990  nvm use 12
+ 1991  npm -version
+ 1992  nvm -v
+ 1993  node -v
+ 1994  ionic cordova platform add android@11
+ 1995  node -v
+ 1996  nvm use 10.16.3
+ 1997  node -v
+ 1998  ionic cordova platform add android@11
+ 1999  history
+ 2000  nvm use 10.16.3
+ 2001  ionic cordova platform add android@11
+ 2002  nvm install 14
+ 2003  nvm use 14
+ 2004  npm install -g typescript\n
+ 2005  npm install
+ 2006  nvm use 14
+ 2007  ionic cordova platform add android@11
+ 2008  nvm install 14
+ 2009  npm install
+ 2010  npm install -g ionic@5.4.16
+ 2011  ionic cordova platform add android@11
+ 2012  ionic cordova platform add android@11 --verbose
+ 2013  ionic cordova platform add android@11
+ 2014  ionic cordova platform ls
+ 2015  history
+ 2016  flutter build apk --split-per-abi
+ 2017  flutter doctor\n
+ 2018  cd ..
+ 2019  cd
+ 2020  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital 
+ 2021  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc_configuration 
+ 2022  cd fc-configuration
+ 2023  flutter build apk --split-per-abi
+ 2024  nvm use node
+ 2025  npm start
+ 2026  git status
+ 2027  git add .
+ 2028  git commit -m "agregamos monto de ahorro total"
+ 2029  git push origin prod
+ 2030  flutter build apk --split-per-abi
+ 2031  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 2032  export PATH=$JAVA_HOME/bin:$PATH
+ 2033  mvn clean generate-sources
+ 2034  git status
+ 2035  git add .
+ 2036  git status
+ 2037  git commit -m "agregamos cambios en seccion para mi"
+ 2038  git push origin dev_web_jair
+ 2039  cd /Users/jairfredyluritalopez/_Financiera/Banca\ Grupal/bancagrupal-app 
+ 2040  ionic cordova build android --prod --release --verbose
+ 2041  npm list typescript\n
+ 2042  nvm use node
+ 2043  npm list typescript\n
+ 2044  npm install -g typescript
+ 2045  nvm use node
+ 2046  npm install -g cordova
+ 2047  npm install -g @angular/cli\n
+ 2048  ionic cordova platform  add android@8.0.0\n
+ 2049  nvm use node
+ 2050  npm install -g ionic\n
+ 2051  ionic cordova plugin add cordova-plugin-uid\nnpm install @ionic-native/uid\n
+ 2052  npm uninstall -g ionic
+ 2053  npm i -g @ionic/cli
+ 2054  git add .
+ 2055  git status
+ 2056  git commit -m "ordenar de forma descendente pagos"
+ 2057  git status
+ 2058  git push origin prod
+ 2059  git add .
+ 2060  git status 
+ 2061  git commit -m "muestra eventos"
+ 2062  git push origin prod
+ 2063  git add .
+ 2064  git commit -m "se agrega campo day en eventos"
+ 2065  git push origin prod
+ 2066  git add .
+ 2067  git commit -m "se agrega campo day en eventos"
+ 2068  git push origin prod
+ 2069  git add .
+ 2070  git commit -m "se agrega campo day en eventos"
+ 2071  git push origin prod
+ 2072  git add .
+ 2073  git commit -m "se agrega campo day en eventos 2"
+ 2074  git push origin prod
+ 2075  git commit -m "se agrega campo day en eventos 3"
+ 2076  git add .
+ 2077  git commit -m "se agrega campo day en eventos 3"
+ 2078  git push origin prod
+ 2079  git add .
+ 2080  git commit -m "se agrega campo day en eventos 4"
+ 2081  git status
+ 2082  git add .
+ 2083  git commit -m "se agrega campo day en eventos 4"
+ 2084  git push origin prod
+ 2085  git add .
+ 2086  git commit -m "se agrega campo day en eventos 5"
+ 2087  git push origin prod
+ 2088  cd /Users/jairfredyluritalopez/_Financiera/_2025/Recaudos 
+ 2089  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-recaudos-bbva.git
+ 2090  cd fc-recaudos-bbva
+ 2091  cd
+ 2092  cd /Users/jairfredyluritalopez/_Financiera/Banca_Digital/fc-terceros 
+ 2093  git pull
+ 2094  git status
+ 2095  git checkout release/4.5.9-RELEASE
+ 2096  git checkout develop
+ 2097  mvn clean generate-sources
+ 2098  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 2099  export PATH=$JAVA_HOME/bin:$PATH
+ 2100  mvn clean generate-sources
+ 2101  mvn clean install -DskipTests=true
+ 2102  mvn clean generate-sources
+ 2103  mvn clean install -DskipTests=true
+ 2104  mvn clean generate-sources
+ 2105  mvn clean install -DskipTests=true
+ 2106  mvn clean generate-sources
+ 2107  mvn clean install -DskipTests=true
+ 2108  mvn clean generate-sources
+ 2109  mvn clean install -DskipTests=true
+ 2110  mvn clean generate-sources
+ 2111  mvn clean install -DskipTests=true
+ 2112  mvn clean generate-sources
+ 2113  mvn clean install -DskipTests=true
+ 2114  mvn clean generate-sources
+ 2115  mvn clean install -DskipTests=true
+ 2116  mvn clean generate-sources
+ 2117  mvn clean install -DskipTests=true
+ 2118  history
+ 2119  cd fc-thirdparty-web
+ 2120  \tcd target
+ 2121  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-fc-thirdparty.jar
+ 2122  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-thirdparty.jar
+ 2123  cd ..
+ 2124  cd
+ 2125  cd /Users/jairfredyluritalopez/_Financiera/_2025/TDP 
+ 2126  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-terceros.git
+ 2127  cd fc-terceros
+ 2128  git checkout release/otp/contactabilidad 
+ 2129  mvn clean generate-sources
+ 2130  mvn clean install -DskipTests=true
+ 2131  cd fc-thirdparty-web
+ 2132  cd target
+ 2133  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-thirdparty.jar
+ 2134  java -version
+ 2135  cd ..
+ 2136  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-thirdparty.jar
+ 2137  cd /Users/jairfredyluritalopez/_Financiera/_2025/TDP 
+ 2138  \t\t\t\tcd fc-terceros
+ 2139  cd fc-thirdparty-web
+ 2140  \t\t\tcd target
+ 2141  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-thirdparty.jar
+ 2142  java -version
+ 2143  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 2144  export PATH=$JAVA_HOME/bin:$PATH
+ 2145  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5005 fc-thirdparty.jar
+ 2146  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5006 fc-thirdparty.jar
+ 2147  sudo /usr/bin/java -jar -Dspring.profiles.active=dev fc-thirdparty.jar
+ 2148  java -version
+ 2149  sudo /usr/bin/java -jar -Dspring.profiles.active=dev -Dserver.port=5000 fc-thirdparty.jar
+ 2150  cd ..
+ 2151  cd
+ 2152  cd /Users/jairfredyluritalopez/_Financiera/_2025/TDP/JAR/api.terceros.notification 
+ 2153  mvn clean generate-sources
+ 2154  mvn clean install -DskipTests=true
+ 2155  mvn clean generate-sources
+ 2156  mvn clean install -DskipTests=true
+ 2157  mvn clean compile assembly:single
+ 2158  cd
+ 2159  cd /Users/jairfredyluritalopez/_Financiera/_2025/TDP/fc-terceros 
+ 2160  mvn clean generate-sources
+ 2161  mvn clean install -DskipTests=true
+ 2162  mvn clean generate-sources
+ 2163  mvn clean install -DskipTests=true
+ 2164  mvn clean generate-sources
+ 2165  mvn clean install -DskipTests=true
+ 2166  mvn clean generate-sources
+ 2167  mvn clean install -DskipTests=true
+ 2168  git add .
+ 2169  git commit -m "primera version servicio otp"
+ 2170  git checkout develop
+ 2171  git merge release/otp/contactabilidad 
+ 2172  git commit -m "merge servicio otp prueba"
+ 2173  git push develop
+ 2174  git checkout release/otp/contactabilidad 
+ 2175  git push release/otp/contactabilidad
+ 2176  git push release/otp/contactabilidadrelease/otp/contactabilidad
+ 2177  git push release/otp/contactabilidad
+ 2178  git add .
+ 2179  git staus
+ 2180  git status
+ 2181  git push release/otp/contactabilidad
+ 2182  cd /Users/jairfredyluritalopez/_Financiera/_2025/TDP/fc-terceros 
+ 2183  git status
+ 2184  git push release/otp/contactabilidad
+ 2185  git checkout develop
+ 2186  git satus
+ 2187  git status
+ 2188  git push develop
+ 2189  git remote -v
+ 2190  git push origin develop
+ 2191  cd
+ 2192  cd /Users/jairfredyluritalopez/_Financiera/_2025/TDP/JAR/api.terceros.notification 
+ 2193  mvn clean compile assembly:single
+ 2194  mvn clean generate-sources
+ 2195  mvn clean install -DskipTests=true
+ 2196  java -version
+ 2197  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_202)
+ 2198  export PATH=$JAVA_HOME/bin:$PATH
+ 2199  mvn clean install -DskipTests=true
+ 2200  mvn clean compile assembly:single
+ 2201  mvn clean install
+ 2202  mvn clean compile assembly:single
+ 2203  mvn clean generate-sources
+ 2204  mvn clean install -DskipTests=true
+ 2205  mvn clean compile assembly:single
+ 2206  cd /Users/jairfredyluritalopez/Downloads/PRODUCCION 
+ 2207  echo $SHELL\n
+ 2208  chmod +x services.sh\n
+ 2209  ./services.sh\n
+ 2210  ls -l services.sh\n
+ 2211  zsh services.sh\n
+ 2212  zsh services.sh WOW\n
+ 2213  zsh services.sh\n
+ 2214  zsh services.sh WOW\n
+ 2215  chmod 600 private.key\n
+ 2216  zsh services.sh WOW\n
+ 2217  cat private.key\n
+ 2218  zsh services.sh WOW\n
+ 2219  cd ..
+ 2220  \t\t\t\tcd PRODUCCION\ 2
+ 2221  zsh services.sh WOW\n
+ 2222  openssl rsa -in private.key -check\n
+ 2223  zsh services.sh WOW\n
+ 2224  cd /Users/jairfredyluritalopez/_Financiera/_2025/TDP/Recaudos 
+ 2225  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/fmbbva-bancamovil/financiera-confianza/fc-recaudos-bbva.git
+ 2226  cd fc-recaudos-bbva
+ 2227  git checkout develop
+ 2228  git branch
+ 2229  git status
+ 2230  git add .
+ 2231  git commit -m "log de pruebas"
+ 2232  git push origin develop
+ 2233  git add .
+ 2234  git commit -m "log de pruebas2"
+ 2235  git push origin develop
+ 2236  cd /Users/jairfredyluritalopez/_Financiera/Banca\ Grupal/FUENTE\ PARA\ MAX 
+ 2237  git clone https://desarrollo.tecnologiafm.org:7443/gitlab/banca-grupal/bancagrupal-app.git
+ 2238  nvm use node
+ 2239  node -v
+ 2240  history
+ 2241  java -version
+ 2242  gradle -v
+ 2243  cd /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/lurichichouse 
+ 2244  history
+ 2245  history > mi_historial.txt\n
+ 2246  git status
+ 2247  git init
+ 2248  git status
+ 2249  git add .
+ 2250  git commit -m "lurichicapp hola mundo"
+ 2251  git push origin master
+ 2252  git pull
+ 2253  git push origin main
+ 2254  git remote add origin https://github.com/RedEyesTI/AppLurichic.git
+ 2255  git remote -v
+ 2256  git push origin main
+ 2257  git push -u origin main
+ 2258  git status
+ 2259  git pull
+ 2260  git remote set-url origin https://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@github.com/RedEyesTI/backlurichic.git\n
+ 2261  git pull
+ 2262  git remote add origin https://github.com/RedEyesTI/AppLurichic.git
+ 2263  git status
+ 2264  git push -u origin main\n
+ 2265  git push -u origin master\n
+ 2266  git remote add origin https://github.com/RedEyesTI/AppLurichicHouse.git
+ 2267  cd /Users/jairfredyluritalopez/_RedEyesTI/LurichicHouse/backlurichic 

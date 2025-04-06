@@ -35,22 +35,25 @@ router.post('/grabarpago', (req, res) => {
  }) ;
 
  router.post('/quitarpago', (req, res) => {
+  console.log('---------------------------');
   console.log('Inicio Servicio Quitar Pago');
   retirarpago(req).then(resultados => {
-      if (resultados) {
-        console.log('entro');
+      if (resultados.affectedRows > 0 ) {
         console.log(resultados);
-        res.status(200).json({
+
+        res.status(200).json({          
           ...resultados[0], // Si es un array, devuelve el primer objeto
           status: 200,
-          message: "Pago retirado."
+          message: "Pago eliminado correctamente."
         });
 
-      } else {
-          res.status(404).json({
+      } 
+            
+      else {
+          res.status(200).json({
              
-              status: 404,
-              message: "Error en retirar pago."
+              status: 200,
+              message: "No se encontro registro de operacion."
           });
       }
     });
@@ -232,20 +235,26 @@ async function retirarpago(req) {
         
         connection = await pool.getConnection(); // Obtener una conexión del pool
         const { idoperacion } = req.body;
-        console.log('Datos recibidos:', req.body); //Parametros de entrada del body
+        console.log('Datos recibidos:', idoperacion); //Parametros de entrada del body
 
         const resultado = await connection.execute('DELETE FROM pagos WHERE idoperacion = ' + idoperacion);
+        //const resultado_consulta = await connection.execute('SELECT * FROM pagos WHERE idoperacion = ' + idoperacion);
         const [rows] = resultado;
-
-        const query = 'DELETE FROM tu_tabla WHERE id = ?';
 
         if (rows.length === 0) {
           console.log('Credencial incorreta!!.');
           return null;
         }
+        else {
+          if(rows.affectedRows > 0){
+            console.log('Se elimina registro correctamente!!');
+          }
+          else{
+            console.log('No se encontro registro!!');
+          }
+        }
 
-        const resultados = rows;
-        return resultados; 
+        return rows; 
 
         } catch (error) {
           console.error('Error en la consulta:', error);
