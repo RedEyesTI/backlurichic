@@ -21,7 +21,7 @@ router.post('/grabarpago', (req, res) => {
           res.status(200).json({
             ...resultados[0], // Si es un array, devuelve el primer objeto
             status: 200,
-            message: "Pago exitoso."
+            message: "Pago registrado correctamente."
           });
 
         } else {
